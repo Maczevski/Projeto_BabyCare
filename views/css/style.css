@@ -1,0 +1,204 @@
+/* .colors{
+
+#2A3D66
+
+#5D54A4
+
+#9D65C9
+
+#D789D7
+
+#94A684
+
+#CEDEBD
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&display=swap');
+
+.body-login{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-ficha{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wholescreen-container{
+    position: relative;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.sideview{
+    width: 580px;
+    height: 100%;
+    background: #ffff;
+    float: left;
+}
+
+/* .imagem-babycare{
+    position: relative;
+    margin-right: 0;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+} */
+
+.login-screen{
+    flex: 100%;
+    position: relative;
+    background-color: #CEDEBD;
+    width: 100%;
+    z-index: 10;
+}
+
+.login-container{
+    z-index: 10;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 450px;
+    background-color: #bface0;
+}
+
+.title-container{
+    text-align: center;
+    height: 80px;
+    background-color: #A084CA;
+}
+
+.login-title{
+    padding: 20px;
+    font-size: 35px;
+}
+
+.info-container{
+    padding: 30px
+}
+
+
+.login-text{
+   margin-left: 5px;
+   color: #000000a6;
+   font-size: large;
+}
+
+.login-input{
+    font-size: medium;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 45px;
+    width: 95%;
+    background: #ffff;
+    border: none;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.login-input:focus{
+    outline: none;
+}
+.login-button{
+    background-color: #A084CA;
+    margin-top: 40px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: x-large;
+    cursor: pointer;
+    color: #000000;
+}
+.login-button:hover{
+    background-color: #9D65C9;
+}
+.anchor{
+    text-decoration: none;
+    color: #0000008c;;
+}
+
+/*Ficha da paciente*/
+
+.navbar{
+    padding: 5px;
+    background-color: #6f4e87;
+    height: 25px;
+    position: fixed;
+    z-index: 1000;
+    top: 0; 
+    margin-left: 0; 
+    margin-right: 0;
+    width: 100%;
+}
+
+.navbar a{
+    margin-left: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #bface0;
+}
+
+.wholescreen{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+
+.side-ficha{
+    text-align: center;
+    position: relative;
+    width: 200px;
+    height: 100vh;
+    background-color: #bface0;
+    float: left;
+}
+
+.ficha-img{
+    margin-top: 50px;
+    width: 120px;
+}
+
+.nome-paciente{
+    color: #ffff;
+    font-weight: normal;
+}
+
+.idade-gestacional{
+    color: #ffff;
+    font-weight: normal;
+}
+
+.side-button{
+    color: #ffff;
+    padding: 8px;
+    text-align: center;
+    background-color: #9D65C9;
+    border-radius: 25px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+
+}
+
+
+.info-ficha{
+    background-color: #A084CA;
+    height: 100%;
+    width: 100%;
+}
+
