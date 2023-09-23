@@ -17,8 +17,12 @@
   <div class="menu">
     <div class="logo">
         <img src="assentes/img/profile.png" alt="">
-
     </div>
+   
+<div class="input-box">
+  <input id="fotoPerfil" type="file" name="foto_perfil" accept="image/*">
+  <label for="fotoPerfil">Escolher imagen</label>
+</div>
     <ul class="menu-list">
        
         <!--<li><a href="#">voltar</a></li>-->
@@ -28,7 +32,7 @@
 
 <div class="content">
     <div class="container">
-        <h1 class="my-5">Cadastro de Paciente</h1>
+        <h2 class="my-5">Cadastro de Paciente</h2>
        <form>
            <!--01-->
             <div class="row g-3">
@@ -61,18 +65,18 @@
              <div class="row g-3">
                 <div class="col-md-6">
                   <label for="peso">Peso</label>
-                  <input id="peso" type="date" class="form-control" name="peso" placeholder="" required>
+                  <input id="peso" type="number" class="form-control" name="peso" placeholder="ex:68.500" required>
                 </div>
                 <div class="col-md-6">
                   <label for="Altura">Altura</label>
-                  <input id="Altura" type="date" class="form-control" name="Altura" placeholder="" required>
+                  <input id="Altura" type="number" class="form-control" name="Altura" placeholder="ex:1.67" required>
                 </div>
               </div>
                <!--05-->
                <div class="row g-3">
                 <div class="col-md-6">
                   <label for="Obsevações">Obsevações</label>
-                  <input id="Obsevações" type="text" class="form-control" name="Obsevações" placeholder="" required>
+                  <input id="Obsevações" type="text" class="form-control input-grande"  name="Obsevações" placeholder="" required>
                 </div>
               </div>
     
