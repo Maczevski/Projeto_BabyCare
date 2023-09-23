@@ -1,0 +1,83 @@
+.navbar {
+   background-color: #5D54A4;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.form-control{
+    border: 15px;
+}
+
+/*container*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os quadrinhos */
+    margin-top: 20px;
+   
+}
+
+.comic {
+    width: calc(50% - 20px); /* 50% da largura da linha com margem */
+    border: 1-px solid #6b0c6e;
+
+}
+
+.info-square {
+    display: flex;
+    flex-direction: row;
+    background-color: #9D65C9; /* Cor de fundo da div quadrada */
+    padding: 20px;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+.profile {
+    flex: 1; /* Para dividir igualmente o espaço dentro da div quadrada */
+    padding: 10px;
+}
+
+.profile img {
+    max-width: 100px; /* Tamanho máximo da imagem de perfil */
+}
+
+.options {
+    flex: 1; /* Para dividir igualmente o espaço dentro da div quadrada */
+    padding: 10px;
+}
+
+.risk {
+    background-color: #c5e1a5; /* Cor de fundo do risco de gravidez */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px; /* Espaçamento abaixo do risco */
+}
+
+/* Estilos para o tipo de parto e consultas pendentes */
+.birth-type select,
+.pending-appointments {
+    background-color: #e4e4e4; /* Cor de fundo para tipo de parto e consultas pendentes */
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px; /* Espaçamento acima do tipo de parto */
+}
+
+/* Outros estilos, como DPP, contagem regressiva, etc. */
