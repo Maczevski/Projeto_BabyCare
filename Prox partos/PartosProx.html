@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,37 +22,44 @@
             <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
         </form>
     </div>
-   <div class="container">
+    <div class="container">
         <div class="comic">
-            <div class="info-square">
-                <div class="profile">
-                 <div>
-                    <img src="assents/img/profile.png" alt="Perfil da grávida">
-                </div>
-                <div>
-                    <h2>Nome da Grávida</h2>
-                    <p>Idade: 28 anos</p>
-                    <p>Semanas: 30</p>
-                    <p>DPP: 15/11/2023</p>
-                    <p> 52 dias para o parto</p>
-                </div>
-                    
-                </div>
-                <div class="options">
-                    <div class="risk">Risco: Baixo</div>
-                    <div class="pending-appointments">
-                        <div class="birth-type">
-                            <label for="birth-type">Tipo de Parto:</label>
-                            <select id="birth-type">
-                                <option value="normal">Normal</option>
-                                <option value="cesarean">Cesariana</option>
-                            </select>
-                        </div>
-                        <p>Consultas Pendentes: 3</p>
-                    </div>
-                </div>
+          <div class="info-square">
+            <div class="profile">
+              <div class="um">
+                <img src="assents/img/profile.png" alt="Perfil da grávida">
+              </div>
+              <div class="dois">
+                <h2>Nome da Grávida</h2>
+                <p>Idade: 28 anos</p>
+                <p>Semanas: 30</p>
+                <p>DPP: 15/11/2023</p>
+                <p>52 dias para o parto</p>
+              </div>
             </div>
+            <div class="options">
+              <div class="birth-type">
+                <label for="birth-type">Tipo de Parto:</label>
+                <select id="birth-type" class="seleção">
+                  <option value="verde" class="verde">sem risco</option>
+                  <option value="amarelo" class="amarelo">médio</option>
+                  <option value="vermelho" class="vermelho">grave</option>
+                </select>
+              </div>
+              <div class="pending-appointments">
+                <label for="birth-type">Tipo de Parto:</label>
+                <select id="birth-type" class="seleção">
+                  <option value="normal">Normal</option>
+                  <option value="cesarean">Cesariana</option>
+                </select>
+                <p>Consultas Pendentes: 3</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      
     
         <!-- Bootstrap JavaScript  -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
