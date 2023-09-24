@@ -1,3 +1,6 @@
+.body{
+    background-color: #E6D7FF;
+ }
 .navbar {
    background-color:#5D54A4 ;
      padding: 10px 0;
@@ -35,7 +38,9 @@
      margin-top: 20px;
      border-radius: 10px; 
  }
+
  .comic {
+    position: relative;
      width: calc(50% - 20px); 
      border: 1-px solid #7a457c;
      border-radius: 10px;
@@ -54,13 +59,6 @@
     padding: 0px;
 }
 
-.dpp, .pending-appointments{
-    width: 400px;
-}
-.pending-appointments{
-    float: left;
-    width: 50%;
-}
  .profile {
     display: flex;
     padding: 10px;
@@ -73,18 +71,59 @@
     align-items: center;
     padding: 1px;
     margin-bottom: 5px; /* Adicionando margem inferior */
-    margin-left: -100px;
+    margin-left: -380px;
     margin-top: 15px;
 }
 .info-details p {
     margin-bottom: 2px; /* Você pode ajustar o valor conforme necessário */
 }
  .profile img {
-    max-width: 85px;
+    max-width: 100px;
     margin-right: 10px; /* Adicionando margem à direita da imagem */
  }
  
- /* Estilos adicionais para div.options */
+ 
+.dpp, .pending-appointments{
+    width: 400px;
+}
+.dpp{
+    width: 150px;
+    background-color: #5D54A4;
+    padding: 0px; /* Adicione padding para controlar o tamanho da cor de fundo */
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    flex: 1;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 5px; /* Adicionando margem inferior */
+    margin-left: 20px;
+    margin-top: 15px;
+
+}
+.dias {
+    width: 150px;
+    background-color: #5D54A4;
+    padding: 0px; /* Adicione padding para controlar o tamanho da cor de fundo */
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    flex: 1;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 5px; /* Adicionando margem inferior */
+    margin-left: 20px;
+    margin-top: 15px;
+
+}
+.pending-appointments{
+    float: left;
+    width: 55%;
+    background-color: #5D54A4;
+    position: relative;
+    top: -60px; /* Mova a div 20 pixels para cima (ajuste conforme necessário) */
+   
+}
 .options {
     display: flex;
     flex-direction: row;
@@ -92,16 +131,15 @@
     align-items: flex-start;
     flex-wrap: wrap;
     border-radius: 25px;
- }*/
+ }
  
  .risk {
-    background-color: #d6a8e2;
     padding: 10px;
     text-align: center;
-    margin-bottom: 10px;
     border-radius: 20px;
     position: absolute;
-    left: 0;
+    top: 0; /* Posiciona no topo */
+    right: 0; /* Posiciona na direita */
 }
  /*  tipo de parto e consultas pendentes */
  /* Adicione este código ao seu arquivo de estilo (ProxPartos.css) */
