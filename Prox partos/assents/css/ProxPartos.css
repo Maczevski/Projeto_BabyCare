@@ -1,128 +1,123 @@
 .navbar {
-   background-color: #5D54A4;
-    padding: 10px 0;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.nav-item {
-    margin-right: 20px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-.form-control{
-    border: 15px;
-}
-
-/*container*/
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
-    margin-top: 20px;
-}
-
-.comic {
-    width: calc(50% - 20px); 
-    border: 1-px solid #6b0c6e;
-    border-radius: 10px;
-    overflow: hidden; 
-}
-
-.info-square {
+   background-color:#5D54A4 ;
+     padding: 10px 0;
+ }
+ 
+ .nav-list {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .nav-item {
+     margin-right: 20px;
+ }
+ 
+ .nav-link {
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .nav-link:hover {
+     text-decoration: underline;
+ }
+ 
+ .form-control{
+     border: 15px;
+ }
+ 
+ /*container*/
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px; 
+     margin-top: 20px;
+     border-radius: 10px; 
+ }
+ .comic {
+     width: calc(50% - 20px); 
+     border: 1-px solid #7a457c;
+     border-radius: 10px;
+     overflow: hidden; 
+     background-color:#5D54A4 ;
+ }
+ .info-square {
     display: flex;
     flex-direction: row;
-    background-color: #9D65C9; 
-    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile, .info, .risk {
+    flex: 1;
+    padding: 0px;
+}
+
+.dpp, .pending-appointments{
+    width: 400px;
+    
+}
+.pending-appointments{
+    float: left;
+    width: 50%;
+}
+ .profile {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px; /* Adicionando margem inferior */
     align-items: center;
 }
 
-.profile {
-    flex: 1; 
-    padding: 10px;
-   
-}
-
-.profile img {
-    max-width: 100px; 
-}
-
-.options {
-    flex: 1; 
-    padding: 10px;
- 
+.info {
+    flex: 1;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 1px; /* Adicionando margem inferior */
+    margin-left: -100px;
+    margin-top: 15px;
 }
 
 .risk {
-    background-color: #c5e1a5; 
+    flex: 1;
     padding: 10px;
-    text-align: center;
-    margin-bottom: 10px; 
-    border-radius: 20px;
+    margin-bottom: 1px; /* Adicionando margem inferior */
+    margin-top: 10;
+    border-radius: 25px;
 }
-
-/*  tipo de parto e consultas pendentes */
-.birth-type select,
-.pending-appointments {
-    background-color: #e4e4e4; 
-    padding: 10px;
-    text-align: center;
-    margin-top: 10px; 
-}
-
-.seleção{
-    background-color: #5D54A4;
-    color: rgb(0, 0, 0);
-    border-radius: 20px;
-}
-.risk{
-    background-color: #5D54A4;
-}
-
-select.seleção option.verde {
-    background-color: green;
-}
-
-select.seleção option.amarelo {
-    background-color: yellow;
-}
-
-select.seleção option.vermelho {
-    background-color: red;
-}
-
-.info-square {
+ .profile img {
+    max-width: 85px;
+    margin-right: 10px; /* Adicionando margem à direita da imagem */
+ }
+ 
+ /* Estilos adicionais para div.options */
+.options {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .um,
-  .dois{
-    flex: 1;
-  }
-
-  .options {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-
-  .birth-type,
-  .pending-appointments {
-    flex: 1;
-  }
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 25px;
+ }*/
+ 
+ .risk {
+     background-color: #c5e1a5; 
+     padding: 10px;
+     text-align: center;
+     margin-bottom: 10px; 
+     border-radius: 20px;
+ }
+ 
+ /*  tipo de parto e consultas pendentes */
+ .birth-type select,
+ .pending-appointments {
+     background-color: #e4e4e4; 
+     text-align: center;
+     margin-top: 10px; 
+ }
+ 
+ .seleção{
+     background-color: #5D54A4;
+     color: rgb(0, 0, 0);
+     border-radius: 20px;
+ }
