@@ -40,7 +40,7 @@
      border: 1-px solid #7a457c;
      border-radius: 10px;
      overflow: hidden; 
-     background-color:#5D54A4 ;
+     background-color:#9D65C9 ;
  }
  .info-square {
     display: flex;
@@ -56,7 +56,6 @@
 
 .dpp, .pending-appointments{
     width: 400px;
-    
 }
 .pending-appointments{
     float: left;
@@ -73,17 +72,12 @@
     flex: 1;
     align-items: center;
     padding: 1px;
-    margin-bottom: 1px; /* Adicionando margem inferior */
+    margin-bottom: 5px; /* Adicionando margem inferior */
     margin-left: -100px;
     margin-top: 15px;
 }
-
-.risk {
-    flex: 1;
-    padding: 10px;
-    margin-bottom: 1px; /* Adicionando margem inferior */
-    margin-top: 10;
-    border-radius: 25px;
+.info-details p {
+    margin-bottom: 2px; /* Você pode ajustar o valor conforme necessário */
 }
  .profile img {
     max-width: 85px;
@@ -101,23 +95,36 @@
  }*/
  
  .risk {
-     background-color: #c5e1a5; 
-     padding: 10px;
-     text-align: center;
-     margin-bottom: 10px; 
-     border-radius: 20px;
- }
- 
+    background-color: #d6a8e2;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+}
  /*  tipo de parto e consultas pendentes */
+ /* Adicione este código ao seu arquivo de estilo (ProxPartos.css) */
+.pending-appointments {
+    display: flex;
+    justify-content: space-between; /* Coloca os elementos o mais longe possível */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+.birth-type {
+    flex: 1; /* Ocupa todo o espaço disponível, empurra o outro elemento para o lado */
+    margin-right: 10px; /* Adiciona um espaço entre os elementos */
+}
  .birth-type select,
  .pending-appointments {
-     background-color: #e4e4e4; 
+     background-color: #cd86df; 
      text-align: center;
-     margin-top: 10px; 
+     margin-top: -50px; 
+     margin-bottom: 10px;
+     margin-left: 40%;
  }
- 
- .seleção{
-     background-color: #5D54A4;
-     color: rgb(0, 0, 0);
-     border-radius: 20px;
- }
+.comic .comic-item {
+    flex: calc(33.33% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
