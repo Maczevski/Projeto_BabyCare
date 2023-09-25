@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6D7FF;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #5D54A4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+header h1 {
+    font-size: 24px;
+}
+
+
+.button-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #9D65C9;
+}
+
+.button-row button {
+    background-color: #5D54A4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button-row button:hover {
+    background-color: #9D65C9;
+}
+
+
+.logout-button {
+    background-color: #ff4444;
+}
+
+.logout-button:hover {
+    background-color: #ff0000;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #5D54A4;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+
+#observacao {
+    border: 2px solid #5D54A4;
+    width: 100%;
+    padding: 10px;
+}
+
+
+footer {
+    background-color: #5D54A4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.patient-buttons {
+    margin-top: 10px;
+}
+
+.patient-buttons button {
+    background-color: #9D65C9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.patient-buttons button:hover {
+    background-color: #5D54A4;
+}
