@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Baby Care</h1> 
+    
+    <section>
+        <button type="button">Gerenciar Conta</button>
+        <button type="button">Contas Cadastradas</button>
+        <button type="button">Relatório</button>
+    </section>
+    <h2>Editar Perfil</h2>
+    <hr>
+    <section>
+        <form action="processar_upload.php" method="post" enctype="multipart/form-data"> <!-- Preciso estudar como seubir a imagem -->
+            <label for="foto">Escolha uma foto:</label><br>
+            <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <form action="" method="get">
+            <fieldset> 
+                <legend>NOME</legend>
+                <input type="text" required name="NOME"><br><br>
+                <legend>SOBRENOME</legend>
+                <input type="text" required name="SOBRENOME"><br><br>
+                <legend>CPF</legend>
+                <input type="number" required name="CPF"><br><br>
+            </fieldset> 
+            <hr>
+            <button type="button">Salvar</button>
+        </form>
+        <form action="" method="get">
+            <label for="Texto">Texto</label><br>
+            <textarea rows="5" name="Texto" id="Texto"></textarea>
+        </form>
+    </section>
+</body>
+</html>

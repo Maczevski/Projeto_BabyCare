@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu, .content {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+}
+
+body {
+    background-color: #E6D7FF;
+}
+
+h1, h2 {
+    color: #5D54A4;
+}
+
+button, input[type="submit"] {
+    background-color: #9D65C9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #5D54A4;
+}
+
+fieldset {
+    border: 2px solid #5D54A4;
+    padding: 10px;
+}
+
+textarea {
+    border: 2px solid #5D54A4;
+}
+
+legend {
+    color: #5D54A4;
+}
+
+hr {
+    border-color: #5D54A4;
+}
