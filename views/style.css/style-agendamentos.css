@@ -1,0 +1,68 @@
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #E6D7FF;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5D54A4;
+            margin-top: 20px;
+        }
+
+        .section {
+            background-color: #5D54A4;
+            color: #E6D7FF;
+            padding: 30px;
+            margin: 30px;
+            border-radius: 1px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        select,
+        input[type="date"],
+        button {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #2A3D66;
+            border-radius: 50px;
+            background-color: #ffffff;
+            color: #2A3D66;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #5D54A4;
+            color: #ffffff;
+        }
+
+        button:hover {
+            background-color: #2A3D66;
+        }
+
+        #appointment-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .appointment {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #9D65C9;
+            color: #E6D7FF;
+        }
+        
+        /* Alinhar elementos centralmente */
+        .section,
+        form,
+        ul {
+            text-align: center;
+        }

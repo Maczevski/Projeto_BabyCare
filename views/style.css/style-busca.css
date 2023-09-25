@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5D54A4; /* Cor de fundo do corpo */
+    color: #2A3D66; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* Cor do cabeçalho */
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #ffffff; /* Cor de fundo do campo de pesquisa */
+    border: none;
+    color: #2A3D66; /* Cor do texto do campo de pesquisa */
+}
+
+#patient-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.patient {
+    border: 1px solid #e2d6e3;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* Cor de fundo dos itens da lista */
+    color: #2A3D66; /* Cor do texto dos itens da lista */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Alinhar à direita */
+    align-items: center; /* Alinhar verticalmente */
+}
+
+.patient-details {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #2A3D66;
+}
+
+/* Estilos para destacar os resultados da busca */
+.highlight {
+    background-color: #D789D7; /* Cor de fundo do destaque */
+    font-weight: bold;
+}
+
+/* Estilos para os indicadores de cor do risco */
+.risk-indicator {
+    object-position: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.risk-red {
+    background-color: red; /* Cor do indicador de risco vermelho */
+}
+
+.risk-yellow {
+    background-color: yellow; /* Cor do indicador de risco amarelo */
+}
+
+.risk-green {
+    background-color: green; /* Cor do indicador de risco verde */
+}
+
+/* Estilo para o link de detalhes */
+.patient-link {
+    color: #2A3D66; /* Cor do link */
+    text-decoration: none;
+    margin-left: 10px; /* Espaçamento entre o texto e o ícone */
+}
+
+/* Estilo para o ícone */
+.patient-link .bi {
+    font-size: 16px; /* Tamanho do ícone */
+}

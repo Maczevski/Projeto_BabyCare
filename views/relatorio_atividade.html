@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Atividade</title>
+    <link rel="stylesheet" href="style.css/style-relatorio.css">    
+</head>
+<body>
+    <h1>Relatório de Atividade</h1>
+
+    <div class="section">
+        <ul id="activity-list">
+            <li class="activity">Maria da Silva foi adicionada em 23 de setembro de 2023</li>
+            <li class="activity">Joséfa Pereira foi removido em 22 de setembro de 2023</li>
+            <li class="activity">Ana Souza teve os dados atualizados em 21 de setembro de 2023</li>
+        </ul>
+    </div>
+
+    <script>
+        // JavaScript para adicionar atividades ao relatório
+        function addActivity(activityText) {
+            const activityList = document.getElementById('activity-list');
+            const activityItem = document.createElement('li');
+            activityItem.className = 'activity';
+            activityItem.textContent = activityText;
+            activityList.appendChild(activityItem);
+        }
+
+        // Exemplo: adicionar uma atividade ao relatório
+        addActivity('Maria da Silva foi adicionada em ' + getCurrentDate());
+
+        // Função para obter a data atual formatada
+        function getCurrentDate() {
+            const now = new Date();
+            const day = now.getDate();
+            const month = now.getMonth() + 1;
+            const year = now.getFullYear();
+            return `${day}/${month}/${year}`;
+        }
+    </script>
+</body>
+</html>
