@@ -1,0 +1,261 @@
+body {
+    background-color: #E6D7FF;
+}
+.navbar {
+   background-color:#5D54A4 ;
+     padding: 10px 0;
+ }
+ 
+ .nav-list {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .nav-item {
+     margin-right: 20px;
+ }
+ 
+ .nav-link {
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .nav-link:hover {
+     text-decoration: underline;
+ }
+ 
+ .form-control{
+     border: 15px;
+ }
+ 
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the contents horizontally */
+    gap: 20px; 
+    margin-top: 20px;
+    border-radius: 10px;
+}
+ .comic {
+    position: relative;
+     width: calc(50% - 50px); 
+     border: 1px solid #7a457c;
+     border-radius: 10px;
+     overflow: hidden; 
+     background-color:#5D54A4 ;
+     height: 300px;
+     margin-bottom: 20px; 
+ }
+ .info-square {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile, .info, .risk {
+    flex: 1;
+    padding: 0px;
+}
+
+ .profile {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px; /* Adicionando margem inferior */
+    align-items: center;
+}
+
+.info {
+    flex: 1;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 5px; /* Adicionando margem inferior */
+    margin-left: -380px;
+    margin-top: 15px;
+}
+.info-details p {
+    margin-bottom: 2px; /* Você pode ajustar o valor conforme necessário */
+}
+ .profile img {
+    max-width: 100px;
+    margin-right: 10px; /* Adicionando margem à direita da imagem */
+ }
+ 
+ 
+.dpp, .pending-appointments{
+    width: 400px;
+}
+.dpp{
+    width: 150px;
+    background-color: #E6D7FF;
+    padding: 0px; /* Adicione padding para controlar o tamanho da cor de fundo */
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    flex: 1;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 5px; /* Adicionando margem inferior */
+    margin-left: 20px;
+    margin-top: 15px;
+
+}
+.dias {
+    width: 150px;
+    background-color: #E6D7FF;
+    padding: 0px; /* Adicione padding para controlar o tamanho da cor de fundo */
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    flex: 1;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 5px; /* Adicionando margem inferior */
+    margin-left: 20px;
+    margin-top: 15px;
+
+}
+.pending-appointments{
+    float: left;
+    width: 55%;
+    background-color: #E6D7FF;
+    position: relative;
+    top: -60px; /* Mova a div 20 pixels para cima (ajuste conforme necessário) */
+   
+} 
+.risk {
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 0; /* Posiciona no topo */
+    right: 0; /* Posiciona na direita */
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 25px;
+ }
+ 
+.pending-appointments {
+    display: flex;
+    justify-content: space-between; /* Coloca os elementos o mais longe possível */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+.birth-type {
+    flex: 1; /* Ocupa todo o espaço disponível, empurra o outro elemento para o lado */
+    margin-right: 10px; /* Adiciona um espaço entre os elementos */
+}
+
+
+ .pending-appointments {
+     background-color: #E6D7FF;
+     text-align: center;
+     margin-top: -50px; 
+     margin-bottom: 10px;
+     margin-left: 40%;
+     border-radius: 15px;
+     height: 150px;
+
+ }
+.comic .comic-item {
+    flex: calc(33.33% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+/* Estilizando a caixa de seleção */
+#birth-type1 {
+    /* Esconde a caixa de seleção padrão */
+    background-color: #E6D7FF;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Defina uma largura e altura personalizada para a caixa de seleção */
+    width: 70px;
+    height: 30px;
+    /* Cor da borda quando não selecionado */
+    border: 1px solid #7a457c;
+    /* Adiciona um espaço para o rótulo ficar ao lado da caixa de seleção */
+    margin-right: 5px;
+    /* Borda arredondada */
+    border-radius: 3px;
+    /* Cor do texto da opção selecionada */
+    color: #000000;
+}
+
+/* Estilizando a caixa de seleção quando selecionada */
+#birth-type1:checked {
+    /* Não altera a cor de fundo, mantendo-a transparente */
+    background-color: transparent;
+}
+
+
+/* Estilo para as caixas de seleção no segundo bloco */
+#birth-type2 {
+    /* Esconde a caixa de seleção padrão */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Defina uma largura e altura personalizada para a caixa de seleção */
+    width: 70px;
+    height: 30px;
+    /* Cor de fundo quando não selecionado */
+    background-color: #5D54A4;
+    /* Cor da borda quando não selecionado */
+    border: 1px solid #7a457c;
+    /* Adiciona um espaço para o rótulo ficar ao lado da caixa de seleção */
+    margin-right: 5px;
+    /* Borda arredondada */
+    border-radius: 3px;
+}
+
+/* Estilo para a caixa de seleção quando selecionada */
+#birth-type2:checked {
+    /* Cor de fundo quando selecionado */
+    background-color: #36a545;
+    /* Cor da borda quando selecionado */
+    border: 1px solid #2a7e35;
+}
+
+
+/* Estilizando a navegação de paginação */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 1300px;
+}
+  
+  /* Estilizando os itens da página */
+  .page-item {
+    margin: 0;
+    padding: 0;
+}
+  
+  /* Estilizando o link ativo */
+  .page-item.active .page-link {
+    background-color: #5D54A4;
+    color: white;
+}
+  
+  /* Estilizando os links normais */
+  .page-link {
+    background-color: #E6D7FF;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+  
