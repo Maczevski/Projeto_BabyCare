@@ -1,17 +1,12 @@
-/* .colors{
+textarea {
+    text-align: left;
+    resize: none;
+}
 
-#2A3D66
+textarea:focus{
+    outline: none;
+}
 
-#5D54A4
-
-#9D65C9
-
-#D789D7
-
-#94A684
-
-#CEDEBD
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&display=swap');
 
@@ -22,6 +17,7 @@
 }
 
 .body-ficha{
+    background-color: #e6d7ff;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -142,6 +138,7 @@
     margin-left: 0; 
     margin-right: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 .navbar a{
@@ -160,16 +157,18 @@
 
 .side-ficha{
     text-align: center;
-    position: relative;
+    position: fixed;
     width: 200px;
-    height: 100vh;
+    height: 100%;
     background-color: #bface0;
     float: left;
+    padding: 10px;
+    z-index: 999;
 }
 
 .ficha-img{
     margin-top: 50px;
-    width: 120px;
+    width: 85%;
 }
 
 .nome-paciente{
@@ -189,16 +188,285 @@
     background-color: #9D65C9;
     border-radius: 25px;
     border: none;
-    width: 150px;
+    width: 90%;
     height: 50px;
     margin-top: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
 
+.side-button:hover{
+    background-color: #CEDEBD;
 }
 
 
 .info-ficha{
-    background-color: #A084CA;
+    overflow: hidden;
+    margin-left: 260px;
+    position: relative;
     height: 100%;
     width: 100%;
 }
 
+.section1{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+.pragnancy-dates {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.dates-container{
+    display: flex;
+}
+
+.DUM {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 80px;
+}
+
+.DPP {
+    text-align: center;
+    margin-right: 80px;
+}
+
+.date-consulta {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.consulta-input{
+    background-color: #bface0;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.consulta-input:focus{
+    outline: none;
+}
+
+.date-input{
+    background-color: #bface0;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.date-input:focus{
+    outline: none;
+}
+
+.consulta-input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.consulta-input::-webkit-outter-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+.pragnancy-risk{
+    position: relative;
+    margin-left: 10px;
+    text-align: left;
+}
+.risk{
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #bface0;
+    height: 90px;
+}
+
+.risk-title{
+    margin-right: 30px;
+}
+
+
+.risk-input{
+    background-color: #e6d7ff;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+
+.risk-input:focus{
+    outline: none;
+}
+
+.personal-info{
+    margin-left: 20px;
+    padding: 10px;
+    height: 100px;
+    text-align: left;
+}
+
+.personal-input{
+    text-align: left;
+    background-color: #e6d7ff;
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.personal-input:focus{
+    outline: none;
+    border:#6f4e87 solid 1px;
+}
+
+.section2{
+    overflow: hidden;
+    background-color: #bface0;
+    padding: 20px;
+    display: flex;
+    width: 80%;
+    margin-left: 4.5vw;
+    border-radius: 20px;
+}
+
+.container2{
+    background-color: #e6d7ff;
+    width: 20vw;
+    margin-left: 30px ;
+    margin-right: 30px ;
+    border-radius: 20px;
+    height: 32vh;
+}
+
+.container2 h3{
+    text-align: center;
+}
+
+.info-text{
+    margin-top: -15px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    padding: 5px;
+    width: 90%;
+    margin-bottom: 10px;
+    height: 20vh;
+}
+
+.section3{
+    overflow: hidden;
+    margin-top: 30px;
+    background-color: #bface0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+    margin-left: 4.4vw;
+    border-radius: 20px;
+    margin-bottom: 5vw;
+}
+
+.container3{
+    padding-top: 20px;
+    position: relative;
+    background-color: #e6d7ff;
+    width: 56vw;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    height: 40vh;
+    margin-bottom: 20px;
+}
+
+.observacoes-text{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    padding: 5px;
+    width: 95%;
+    margin-bottom: 10px;
+    height: 35vh;
+}
+
+.section4{
+    overflow: hidden;
+    margin-top: 30px;
+    background-color: #bface0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+    margin-left: 4.4vw;
+    border-radius: 20px;
+    margin-bottom: 5vw;
+}
+
+.container4{
+    padding-top: 20px;
+    position: relative;
+    background-color: #e6d7ff;
+    width: 56vw;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+    height: 60vh;
+    margin-bottom: 20px;
+}
+
+.doctor-text{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #ffff;
+    width: 90%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.info-parto{
+    display: flex;
+}
+
+.obs-parto{
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    height: 37vh;
+    width: 30vw;
+    padding: 10px;
+}
+
+.parto-checklist{
+    border: #0000006f solid 1px;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    height: 37vh;
+    width: 30vw;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+}

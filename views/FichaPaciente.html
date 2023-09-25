@@ -22,22 +22,118 @@
             <h4 class="idade-gestacional">
                 15 semanas
             </h4>
-
-            <button class="side-button">
-                Editar
-            </button>
-            <button class="side-button">
-                Informações
-            </button>
-            <button class="side-button">
+             <button class="side-button">
                 Agendamento
             </button>
+            <button class="side-button">
+                Voltar ao menu
+            </button>
+           
 
         </div>
         <div class="info-ficha">
+            <div class="section1">
+                <div class="pragnancy-dates">
+                    <div class="dates-container">
+                         <div class="DUM">
+                        <label for="DUM-date">DUM</label>
+                        <input type="date" class="date-input" id="DUM-date" value="2023-06-12">
+                    </div>
+                        <div class="DPP">
+                            <label for="DPP-date">DPP</label>
+                            <input type="date" class="date-input" id="DPP-date" value="2024-03-20"><br>
+                        </div>
+                    </div>
+                    <div class="date-consulta">
+                        <label for="consulta">Consulta:</label>
+                        <input type="number" value="21" class="consulta-input" id="consulta">
+                    </div>
+                </div>
 
+                <div class="pragnancy-risk">
+                    <div class="risk">
+                        <label for="risco" class="risk-title">Risco:</label>
+                        <select id="risco" name="cor" class="risk-input" onchange="mudarCor(this)">
+                            <option hidden>Selecione</option>
+                            <option value="#15EA1D" data-bgcolor="#15EA1D">Habitual</option>
+                            <option value="#FFE500" data-bgcolor="#FFE500">Intermediário</option>
+                            <option value="#FC0000" data-bgcolor="#FC0000">Alto</option>
+                        </select>
+                        <label for="parto" class="risk-title">Parto:</label>
+                        <select id="parto" class="risk-input">
+                            <option hidden>---------------------------------------</option>
+                            <option>Normal</option>
+                            <option>Cesarea</option>
+                        </select>
+
+                    </div>
+                    <div class="personal-info">
+                        <label for="phone-number">Numero: </label>
+                        <input id="phone-number" class="personal-input" value="45 99836-9465"><br>
+                        <label for="adress">Endereço: </label>
+                        <input id="adress" class="personal-input" value="Rua Comendador Franco, 765">
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="container2">
+                    <h3>Consultas</h3>
+                    <textarea class="info-text">
+
+                    </textarea>
+
+                </div>
+                <div class="container2">
+                    <h3>Exames</h3>
+                    <textarea class="info-text">
+
+                    </textarea>
+                    
+                </div>
+                <div class="container2">
+                    <h3>Texto</h3>
+                    <textarea class="info-text">
+
+                    </textarea>
+                </div>
+
+            </div>
+            <div class="section3">
+                <h3>Observações</h3>
+                <div class="container3">
+                    <textarea class="observacoes-text">
+
+                    </textarea>
+                   
+
+                </div>
+                
+            </div>
+            <div class="section4">
+                <h3>Informações do parto</h3>
+                <div class="container4">
+                    <textarea class="doctor-text">Médico responsável: Arthur de Oliveira</textarea>
+
+                    <div class="info-parto">
+                        <textarea class="obs-parto"></textarea>
+                        
+                        <div class="parto-checklist">
+                            <label>List</label>
+                            <input class="" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
+
+    <script>
+        function mudarCor(selectElement) {
+            var selectedOption = selectElement.options[selectElement.selectedIndex];
+            var backgroundColor = selectedOption.getAttribute('data-bgcolor');
+            selectElement.style.backgroundColor = backgroundColor;
+        }
+    </script>
     
 </body>
 </html>
