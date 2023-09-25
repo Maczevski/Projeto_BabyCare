@@ -8,3 +8,4 @@ birthTypeSelects.forEach((select, index) => {
         console.log(`Grávida ${index + 1} selecionou: ${this.value}`);
     });
 });
+
