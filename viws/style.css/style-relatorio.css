@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6D7FF;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #5D54A4;
+}
+
+.activity {
+    background-color: #6f25e5;
+    color: #ffffff;
+    border: 1px solid #9d65c9;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.section {
+    background-color: #9D65C9;
+    color: #E6D7FF;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+select,
+input[type="date"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #5D54A4;
+    border-radius: 1px;
+    background-color: #E6D7FF;
+    color: #5D54A4;
+}
+
+button {
+    background-color: #5D54A4;
+    color: #E6D7FF;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9D65C9;
+}
