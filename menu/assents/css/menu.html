@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Care</title>
+    <link rel="stylesheet" href="stylemenu.css">
+</head>
+<body>
+    <header>
+        <h1>Baby Care</h1>
+    </header>
+
+    <nav>
+        <section>
+            <div class="button-row">
+                <button type="button">Lista de Pacientes</button>
+                <button type="button">Cadastrar Gestante</button>
+                <button type="button">Relatório</button>
+                <button type="button">Próximos Partos</button>
+                <button type="button">Agendamentos</button>
+                <button type="button">Configurações</button>
+                <button type="button" class="logout-button">Sair</button>
+            </div>
+        </section>
+
+        <main>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pacientes</th>
+                        <th>Estado da Gravidez</th>
+                        <th>Bairro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fernanda</td>
+                        <td>Médio-risco</td>
+                        <td>Centro</td>
+                    </tr>
+                    <tr>
+                        <td>Bruna</td>
+                        <td>Normal</td>
+                        <td>Morumbi</td>
+                    </tr>
+                    <tr>
+                        <td>Marcela</td>
+                        <td>Médio-risco</td>
+                        <td>Centro</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section>
+                <form action="" method="get">
+                    <label for="observacao">Campo de Observação</label><br>
+                    <textarea id="observacao" rows="10"></textarea>
+                </form>
+            </section>
+        </main>
+    </nav>
+
+    <footer>
+        <h2 id="proximos-pacientes">Pacientes 25-09-2023</h2>
+        <div class="patient-buttons">
+            <button type="button">Maria Silva</button>
+            <button type="button">Roberta Rodrigues</button>
+            <button type="button">Ana Maria S. Pinto</button>
+        </div>
+    </footer>
+</body>
+</html>
