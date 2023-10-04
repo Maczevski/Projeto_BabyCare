@@ -1,36 +1,35 @@
 body {
-    background-color: #E6D7FF;
+    background-color: #A084CA;
 }
 .navbar {
-   background-color:#5D54A4 ;
-     padding: 10px 0;
- }
- 
- .nav-list {
-     list-style: none;
-     padding: 0;
-     display: flex;
-     align-items: center;
- }
- 
- .nav-item {
-     margin-right: 20px;
- }
- 
- .nav-link {
-     color: white;
-     text-decoration: none;
- }
- 
- .nav-link:hover {
-     text-decoration: underline;
- }
- 
- .form-control{
-     border: 15px;
- }
- 
- .container {
+    background-color:#6f4e87 ;
+    padding: 10px 0;
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.form-control{
+    border: 15px;
+}
+
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center the contents horizontally */
@@ -38,17 +37,17 @@ body {
     margin-top: 20px;
     border-radius: 10px;
 }
- .comic {
+.comic {
     position: relative;
-     width: calc(50% - 50px); 
-     border: 1px solid #7a457c;
-     border-radius: 10px;
-     overflow: hidden; 
-     background-color:#5D54A4 ;
-     height: 300px;
-     margin-bottom: 20px; 
- }
- .info-square {
+    width: calc(50% - 50px); 
+    border: 2px solid #e6d7ff ;
+    border-radius: 25px;
+    overflow: hidden; 
+    background-color:#e6d7ff ;
+    height: 300px;
+    margin-bottom: 20px; 
+}
+.info-square {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,7 +59,7 @@ body {
     padding: 0px;
 }
 
- .profile {
+.profile {
     display: flex;
     padding: 10px;
     margin-bottom: 10px; /* Adicionando margem inferior */
@@ -78,18 +77,18 @@ body {
 .info-details p {
     margin-bottom: 2px; /* Você pode ajustar o valor conforme necessário */
 }
- .profile img {
+.profile img {
     max-width: 100px;
     margin-right: 10px; /* Adicionando margem à direita da imagem */
- }
- 
- 
+}
+
+
 .dpp, .pending-appointments{
     width: 400px;
 }
 .dpp{
     width: 150px;
-    background-color: #E6D7FF;
+    background-color: #A084CA;
     padding: 0px; /* Adicione padding para controlar o tamanho da cor de fundo */
     margin-top: 20px;
     margin-left: 20px;
@@ -104,7 +103,7 @@ body {
 }
 .dias {
     width: 150px;
-    background-color: #E6D7FF;
+    background-color: #A084CA;
     padding: 0px; /* Adicione padding para controlar o tamanho da cor de fundo */
     margin-top: 20px;
     margin-left: 20px;
@@ -120,10 +119,10 @@ body {
 .pending-appointments{
     float: left;
     width: 55%;
-    background-color: #E6D7FF;
+    background-color: #A084CA;
     position: relative;
     top: -60px; /* Mova a div 20 pixels para cima (ajuste conforme necessário) */
-   
+
 } 
 .risk {
     padding: 10px;
@@ -140,8 +139,8 @@ body {
     align-items: flex-start;
     flex-wrap: wrap;
     border-radius: 25px;
- }
- 
+}
+
 .pending-appointments {
     display: flex;
     justify-content: space-between; /* Coloca os elementos o mais longe possível */
@@ -152,48 +151,40 @@ body {
     margin-right: 10px; /* Adiciona um espaço entre os elementos */
 }
 
+.pending-appointments {
+    background-color: #A084CA;
+    text-align: center;
+    margin-top: -50px; 
+    margin-bottom: 10px;
+    margin-left: 40%;
+    border-radius: 15px;
+    height: 150px;
 
- .pending-appointments {
-     background-color: #E6D7FF;
-     text-align: center;
-     margin-top: -50px; 
-     margin-bottom: 10px;
-     margin-left: 40%;
-     border-radius: 15px;
-     height: 150px;
-
- }
+}
 .comic .comic-item {
     flex: calc(33.33% - 20px);
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #6f4e87;
     padding: 10px;
 }
 
 
 /* Estilizando a caixa de seleção */
 #birth-type1 {
-    /* Esconde a caixa de seleção padrão */
     background-color: #E6D7FF;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    /* Defina uma largura e altura personalizada para a caixa de seleção */
     width: 70px;
     height: 30px;
-    /* Cor da borda quando não selecionado */
-    border: 1px solid #7a457c;
-    /* Adiciona um espaço para o rótulo ficar ao lado da caixa de seleção */
+    border: 1px solid #E6D7FF;
     margin-right: 5px;
-    /* Borda arredondada */
     border-radius: 3px;
-    /* Cor do texto da opção selecionada */
     color: #000000;
 }
 
 /* Estilizando a caixa de seleção quando selecionada */
 #birth-type1:checked {
-    /* Não altera a cor de fundo, mantendo-a transparente */
     background-color: transparent;
 }
 
@@ -204,24 +195,17 @@ body {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    /* Defina uma largura e altura personalizada para a caixa de seleção */
     width: 70px;
     height: 30px;
-    /* Cor de fundo quando não selecionado */
-    background-color: #5D54A4;
-    /* Cor da borda quando não selecionado */
-    border: 1px solid #7a457c;
-    /* Adiciona um espaço para o rótulo ficar ao lado da caixa de seleção */
-    margin-right: 5px;
-    /* Borda arredondada */
+    background-color: #6f4e87;
+    border: 1px solid #6f4e87;
+    margin-right: 10px;
     border-radius: 3px;
 }
 
 /* Estilo para a caixa de seleção quando selecionada */
 #birth-type2:checked {
-    /* Cor de fundo quando selecionado */
     background-color: #36a545;
-    /* Cor da borda quando selecionado */
     border: 1px solid #2a7e35;
 }
 
@@ -234,23 +218,23 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-left: 1300px;
+    margin-left: 0px;
 }
-  
+
   /* Estilizando os itens da página */
-  .page-item {
+.page-item {
     margin: 0;
     padding: 0;
 }
-  
+
   /* Estilizando o link ativo */
-  .page-item.active .page-link {
-    background-color: #5D54A4;
+.page-item.active .page-link {
+    background-color: #6f4e87;
     color: white;
 }
-  
+
   /* Estilizando os links normais */
-  .page-link {
+.page-link {
     background-color: #E6D7FF;
     color: black;
     text-decoration: none;
@@ -258,4 +242,3 @@ body {
     margin: 0 5px;
     border-radius: 5px;
 }
-  
