@@ -1,5 +1,5 @@
 body {
-    background-color: #E6D7FF;
+    background-color: #A084CA;
 }
 .navbar {
    background-color:#5D54A4 ;
@@ -41,10 +41,10 @@ body {
  .comic {
     position: relative;
      width: calc(50% - 50px); 
-     border: 1px solid #7a457c;
+     border: 1px solid #9b5a9d;
      border-radius: 10px;
      overflow: hidden; 
-     background-color:#5D54A4 ;
+     background-color:#e6d7ff ;
      height: 300px;
      margin-bottom: 20px; 
  }
@@ -154,13 +154,13 @@ body {
 
 
  .pending-appointments {
-     background-color: #E6D7FF;
-     text-align: center;
-     margin-top: -50px; 
-     margin-bottom: 10px;
-     margin-left: 40%;
-     border-radius: 15px;
-     height: 150px;
+    background-color: #E6D7FF;
+    text-align: center;
+    margin-top: -50px; 
+    margin-bottom: 10px;
+    margin-left: 40%;
+    border-radius: 15px;
+    height: 150px;
 
  }
 .comic .comic-item {
@@ -182,7 +182,7 @@ body {
     width: 70px;
     height: 30px;
     /* Cor da borda quando não selecionado */
-    border: 1px solid #7a457c;
+    border: 1px solid #bea7be;
     /* Adiciona um espaço para o rótulo ficar ao lado da caixa de seleção */
     margin-right: 5px;
     /* Borda arredondada */
@@ -208,7 +208,7 @@ body {
     width: 70px;
     height: 30px;
     /* Cor de fundo quando não selecionado */
-    background-color: #5D54A4;
+    background-color: #e6d7ff;
     /* Cor da borda quando não selecionado */
     border: 1px solid #7a457c;
     /* Adiciona um espaço para o rótulo ficar ao lado da caixa de seleção */
