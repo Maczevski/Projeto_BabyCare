@@ -20,21 +20,21 @@ body {
     background-color: #ffffff;
 }
 
- .container-menu {
+.container-menu {
      background-color: #333; /* Cor de fundo da barra lateral */
      color: #fff; /* Cor do texto na barra lateral */
-     padding: 20px;
- }
+    padding: 20px;
+}
 
- .barra_lateral {
-     text-align: center;
- }
+.barra_lateral {
+    text-align: center;
+}
 
- .imagem_perfil {
+.imagem_perfil {
      max-width: 100px; /* Largura máxima da imagem de perfil */
      border-radius: 50%; /* Tornar a imagem de perfil circular */
- }
- .input-grande {
+}
+.input-grande {
     height: 150px; /* Defina a altura desejada em pixels ou outra unidade de medida */
     width: 1160px;
   }
