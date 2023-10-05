@@ -38,10 +38,11 @@
                     </div>
                 </div>
                 <div class="risk">
-                    <select id="birth-type1">
-                        <option value="normal" data-color="green">Habitual</option>
-                        <option value="cesarean" data-color="yellow">Intermediário</option>
-                        <option value="cesarean" data-color="red">Alto</option>
+                    <select id="birth-type1" onchange="selectClass()" >
+                        <option id="01" class="habitual-class" value="Habitual">Habitual</option>
+                        <option id="02" class="interme-class" value="Intermediário">Intermediário</option>
+                        <option id="03" class="alto-class" value="Alto" >Alto</option>
+
                     </select>
                 </div>
             </div>

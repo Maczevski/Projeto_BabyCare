@@ -168,8 +168,7 @@ body {
     padding: 10px;
 }
 
-
-/* Estilizando a caixa de seleção */
+/*  caixa de seleção 01 */
 #birth-type1 {
     background-color: #E6D7FF;
     appearance: none;
@@ -189,7 +188,7 @@ body {
 }
 
 
-/* Estilo para as caixas de seleção no segundo bloco */
+/* caixas de seleção 02 */
 #birth-type2 {
     /* Esconde a caixa de seleção padrão */
     appearance: none;
@@ -241,4 +240,18 @@ body {
     padding: 5px 10px;
     margin: 0 5px;
     border-radius: 5px;
+}
+
+.habitual-class{
+    background-color: #2a7e35;
+    color: #E6D7FF;
+}
+.interme-class{
+    background-color: darkgoldenrod;
+    color: #e6d7ff;
+}
+
+.alto-class{
+    background-color: darkred;
+    color: #e6d7ff;
 }
