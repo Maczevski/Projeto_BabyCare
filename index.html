@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="views/css/style.css" type="text/css" rel="stylesheet">
+    <script>
+        function forgot_password(){
+                // Exibe um prompt para o usuário e armazena a entrada em uma variável
+                var userInput = prompt("Por favor, digite seu email:");
+    
+                // Verifica se o usuário inseriu alguma coisa
+                if (userInput !== null) {
+                    // Exibe a mensagem de aviso com a entrada do usuário
+                    alert("email enviado" );
+                } else {
+                    // Caso o usuário tenha clicado em "Cancelar" no prompt
+                    alert("cancelado");
+                }
+            }       
+        </script>
 </head>
 <body class="body-login">
     <div class="wholescreen-container">
-         <div class="sideview">  
+        <div class="sideview">  
             <img class="imagem-babycare" src="views/img/in-vitro-fertilization-animate.svg" alt="babycare">
-         </div>
-         <div class="login-screen">
+        </div>
+        <div class="login-screen">
 
             <div class="login-container">
                 <div class="title-container">
@@ -25,13 +40,13 @@
                         <input class="login-input" id="login-password" type="password" placeholder="Digite sua senha"><br>
                         <a class="anchor" href="menu/assents/css/menu.html"><button class="login-button" type="button">Acessar</button></a> <br>
                         <div class="forgot-password">
-                              <a class="anchor" href="#">Esqueci minha senha</a>
+                            <a class="anchor" onclick="forgot_password()">Esqueci minha senha</a>
                         </div>
                     </form>
                 </div>
             </div>
 
-         </div>
+        </div>
     </div>
 </body>
 </html>
