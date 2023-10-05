@@ -38,14 +38,17 @@
                     </div>
                 </div>
                 <div class="risk">
-                    <select id="birth-type1">
-                        <option value="normal" data-color="green">Verde</option>
-                        <option value="cesarean" data-color="yellow">Amarelo</option>
-                        <option value="cesarean" data-color="red">Vermelho</option>
-                    </select>
+                    <div class="risk">
+                        <select class="risk-select" onchange="changeColor(this)">
+                            <option ></option>
+                            <option value="green" class="green">Habitual</option>
+                            <option value="yellow" class="yellow">Intermediário</option>
+                            <option value="red" class="red">Alto </option>
+                        </select>
+                    </div>
                 </div>
             </div>
-         <div class="line-dois">
+        <div class="line-dois">
             <div class="dpp">
                 <p>DPP: 17/10/23</p>
             </div>
@@ -59,7 +62,7 @@
                         <div class="colsulta">
                             <p>Consulta odontologica</p>
                         </div>
-                       </div>
+                    </div>
                     <div class="birth-type">
                         <label for="birth-type1">Tipo de Parto:</label>
                         <select id="birth-type2">
@@ -67,14 +70,12 @@
                             <option value="cesarean">Cesariana</option>
                         </select>
                     </div>
-                   
-                  
                 </div>
             </div>
-         </div>
         </div>
-         <!-- Grávida 2 -->
-         <div class="comic">
+        </div>
+        <!-- Grávida 2 -->
+        <div class="comic">
             <div class="info-square">
                 <div class="profile">
                     <div>
@@ -89,14 +90,15 @@
                     </div>
                 </div>
                 <div class="risk">
-                    <select id="birth-type1">
-                        <option value="normal" data-color="green">Verde</option>
-                        <option value="cesarean" data-color="yellow">Amarelo</option>
-                        <option value="cesarean" data-color="red">Vermelho</option>
+                    <select class="risk-select" onchange="changeColor(this)">
+                        <option ></option>
+                        <option value="green" class="green">Habitual</option>
+                        <option value="yellow" class="yellow">Intermediário</option>
+                        <option value="red" class="red">Alto </option>
                     </select>
                 </div>
             </div>
-         <div class="line-dois">
+        <div class="line-dois">
             <div class="dpp">
                 <p>DPP:  23/10/23</p>
             </div>
@@ -111,7 +113,7 @@
                             <p>consulta medica</p>
                             <p>Consulta odontologica</p>
                         </div>
-                       </div>
+                    </div>
                     <div class="birth-type">
                         <label for="birth-type1">Tipo de Parto:</label>
                         <select id="birth-type2">
@@ -119,11 +121,9 @@
                             <option value="cesarean">Cesariana</option>
                         </select>
                     </div>
-                   
-                  
                 </div>
             </div>
-         </div>
+        </div>
         </div>
 <!-- Grávida 3 -->
 <div class="comic">
@@ -141,14 +141,15 @@
             </div>
         </div>
         <div class="risk">
-            <select id="birth-type1">
-                <option value="normal" data-color="green">Verde</option>
-                <option value="cesarean" data-color="yellow">Amarelo</option>
-                <option value="cesarean" data-color="red">Vermelho</option>
+            <select class="risk-select" onchange="changeColor(this)">
+                <option ></option>
+                <option value="green" class="green">Habitual</option>
+                <option value="yellow" class="yellow">Intermediário</option>
+                <option value="red" class="red">Alto </option>
             </select>
         </div>
     </div>
- <div class="line-dois">
+<div class="line-dois">
     <div class="dpp">
         <p>DPP:  29/10/23</p>
     </div>
@@ -160,9 +161,8 @@
             <div class="consultations">
                 <p><b> Consultas Pendentes: 0 </b></p>
                 <div class="colsulta">
-                   
                 </div>
-               </div>
+            </div>
             <div class="birth-type">
                 <label for="birth-type1">Tipo de Parto:</label>
                 <select id="birth-type2">
@@ -170,11 +170,9 @@
                     <option value="cesarean">Cesariana</option>
                 </select>
             </div>
-           
-          
         </div>
     </div>
- </div>
+</div>
 </div>
 
 <!-- Grávida 4 -->
@@ -193,14 +191,15 @@
             </div>
         </div>
         <div class="risk">
-            <select id="birth-type1">
-                <option value="normal" data-color="green">Verde</option>
-                <option value="cesarean" data-color="yellow">Amarelo</option>
-                <option value="cesarean" data-color="red">Vermelho</option>
+            <select class="risk-select" onchange="changeColor(this)">
+                <option ></option>
+                <option value="green" class="green">Habitual</option>
+                <option value="yellow" class="yellow">Intermediário</option>
+                <option value="red" class="red">Alto </option>
             </select>
         </div>
     </div>
- <div class="line-dois">
+<div class="line-dois">
     <div class="dpp">
         <p>DPP: 04/11/23</p>
     </div>
@@ -215,7 +214,7 @@
                     <p>consulta odontologica</p>
                     <p>consulta medica</p>
                 </div>
-               </div>
+            </div>
             <div class="birth-type">
                 <label for="birth-type1">Tipo de Parto:</label>
                 <select id="birth-type2">
@@ -223,25 +222,21 @@
                     <option value="cesarean">Cesariana</option>
                 </select>
             </div>
-           
-          
         </div>
     </div>
- </div>
+</div>
 </div>
 
     </div>
-       
     <nav aria-label="...">
         <ul class="pagination">
             <li class="page-item"><a class="page-link" href="PartosProx.html">1</a></li>
-          <li class="page-item active" aria-current="page">
+        <li class="page-item active" aria-current="page">
             <span class="page-link">2</span>
-          </li>
-          <li class="page-item"><a class="page-link" href="partos03.html">3</a></li>
+        </li>
+        <li class="page-item"><a class="page-link" href="partos03.html">3</a></li>
         </ul>
-      </nav>
-  
+    </nav>
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
     <script src="assents/javascript/parto.js"></script>

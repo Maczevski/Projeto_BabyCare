@@ -168,26 +168,28 @@ body {
     padding: 10px;
 }
 
-/*  caixa de seleção 01 */
-#birth-type1 {
-    background-color: #E6D7FF;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 70px;
-    height: 30px;
-    border: 1px solid #E6D7FF;
-    margin-right: 5px;
-    border-radius: 3px;
-    color: #000000;
+ /* Estilos CSS para a caixa de seleção */
+.risk-select {
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: 25px; /* Ajuste a altura conforme necessário */
+    border: 2px solid #ccc; /* Cor padrão da borda */
+    border-radius: 6px; /* Borda arredondada */
 }
 
-/* Estilizando a caixa de seleção quando selecionada */
-#birth-type1:checked {
-    background-color: transparent;
+/* Estilos para a caixa de seleção quando a opção "Verde" está selecionada */
+.risk-select.green {
+    background-color: green;
 }
 
+/* Estilos para a caixa de seleção quando a opção "Vermelho" está selecionada */
+.risk-select.red {
+    background-color: red;
+}
 
+/* Estilos para a caixa de seleção quando a opção "Amarelo" está selecionada */
+.risk-select.yellow {
+    background-color: yellow;
+}
 /* caixas de seleção 02 */
 #birth-type2 {
     /* Esconde a caixa de seleção padrão */
@@ -240,18 +242,4 @@ body {
     padding: 5px 10px;
     margin: 0 5px;
     border-radius: 5px;
-}
-
-.habitual-class{
-    background-color: #2a7e35;
-    color: #E6D7FF;
-}
-.interme-class{
-    background-color: darkgoldenrod;
-    color: #e6d7ff;
-}
-
-.alto-class{
-    background-color: darkred;
-    color: #e6d7ff;
 }
