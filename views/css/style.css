@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&display=swap');
+
 textarea {
     font-family: 'Roboto';
     text-align: left;
@@ -8,8 +10,6 @@ textarea:focus{
     outline: none;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&display=swap');
 
 .body-login{
     margin: 0;
@@ -127,6 +127,15 @@ textarea:focus{
     text-decoration: none;
     color: #0000008c;;
 }
+.anchor:hover{
+    color: #000000;
+}
+
+.forgot-password{
+    text-align: right;
+    margin-top: 20px;
+}
+
 
 /*Ficha da paciente*/
 
