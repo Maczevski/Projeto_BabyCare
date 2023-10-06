@@ -22,9 +22,9 @@
             <h4 class="idade-gestacional">
                 15 semanas
             </h4>
-             <a href="/views/agendamentos.html"><button class="side-button">
-               Agendamento
-            </button></a>
+            <!-- Abrir modal -->
+             <button class="side-button" id="Abrir_agendamentos" onclick="abrir_modal()">Agendamento</button>
+
             <a href="/menu/assents/css/menu.html"><button class="side-button">
                 Voltar ao menu
             </button></a>
@@ -85,25 +85,19 @@
                 </div>
                 <div class="container2">
                     <h3>Exames</h3>
-                    <textarea class="info-text">
-
-                    </textarea>
+                    <textarea class="info-text"></textarea>
                     
                 </div>
                 <div class="container2">
                     <h3>Texto</h3>
-                    <textarea class="info-text">
-
-                    </textarea>
+                    <textarea class="info-text"></textarea>
                 </div>
 
             </div>
             <div class="section3">
                 <h3>Observações</h3>
                 <div class="container3">
-                    <textarea class="observacoes-text">
-
-                    </textarea>
+                    <textarea class="observacoes-text"></textarea>
                    
 
                 </div>
@@ -126,6 +120,28 @@
             </div>            
         </div>
     </div>
+    <div class="modalAgendamento" id="janelaAgendamento">
+        <div class="sectionModal">
+            <span class="fechar" onclick="fechar_modal()">&times;</span>
+            <h2>Agendar Consulta</h2>
+            <form id="appointment-form">
+                <label class="text-agendamento" for="patient-name">Nome do Paciente:</label><br>
+                <input class="campo-agendamento" type="text" id="patient-name" required><br><br>
+    
+                <label  class="text-agendamento" for="appointment-type">Tipo de Consulta:</label><br>
+                <select class="campo-agendamento" id="appointment-type" required>
+                    <option value="trimestral">Trimestral</option>
+                    <option value="dentista">Dentista</option>
+                    <option value="outros">Outros</option>
+                </select><br><br>
+    
+                <label  class="text-agendamento" for="appointment-date">Data do Agendamento:</label><br>
+                <input class="campo-agendamento" type="date" id="appointment-date" required><br><br>
+    
+                <button class="agendamento-button" type="submit" onclick=" return agendar_consulta()">Agendar</button>
+            </form>
+        </div>
+    </div>
 
     <script>
         function mudarCor(selectElement) {
@@ -133,6 +149,32 @@
             var backgroundColor = selectedOption.getAttribute('data-bgcolor');
             selectElement.style.backgroundColor = backgroundColor;
         }
+        var abrirModal = document.getElementById('abrirAgendamentos');
+        var modalAgendamento = document.getElementById('janelaAgendamento');
+        function abrir_modal(){
+            modalAgendamento.style.display = 'block';
+        }
+        function fechar_modal(){
+            modalAgendamento.style.display = 'none';
+        }
+        function agendar_consulta() {
+            var nome = document.getElementById('patient-name').value;
+            var dataInput = document.getElementById('appointment-date').value;
+            var data_agendamento = new Date(dataInput);
+            var data_atual = new Date();
+            
+            if (nome === '') {
+                alert('Por favor, insira o nome do paciente.');
+                return false;
+            } else if (isNaN(data_agendamento.getTime()) || data_agendamento <= data_atual) {
+                alert('Data inválida. Por favor, insira uma data válida.');
+                return false;
+            } else {
+            fechar_modal();
+            return true;
+            }
+}
+
     </script>
     
 </body>

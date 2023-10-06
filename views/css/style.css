@@ -381,7 +381,10 @@ textarea:focus{
     margin-bottom: 10px;
     height: 20vh;
 }
-
+.info-text::-webkit-scrollbar{
+    width: 2px;
+    background-color: none;
+}
 .section3{
     overflow: hidden;
     margin-top: 30px;
@@ -477,6 +480,75 @@ textarea:focus{
     padding: 10px;
 }
 
+.modalAgendamento{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000008e;
+     width: 100vw;
+     top: 0;
+     left: 0;
+    z-index: 1000000;
+}
+
+.sectionModal{
+    background-color: #ffffff;
+    height:85vh;
+    margin-top: 10vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 10vw;
+    text-align: left;
+    border-radius: 30px;
+}
+
+.sectionModal h2{
+    font-family: 'Roboto';
+    font-size: x-large;
+    text-align: center;
+    padding-right: 10vw;
+}
+
+.fechar{
+    margin-left: 90%;
+    margin-top: 50px;
+    size: 10px;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.text-agendamento{
+    font-family: 'Roboto';
+   
+}
+
+.campo-agendamento{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 85%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.agendamento-button{
+    background-color: #6f4e87;
+    color: white;
+    font-size: larger;
+    width: 15vw;
+    height: 8vh;
+    position: relative;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-80%);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.agendamento-button:hover{
+    background-color: #CEDEBD;
+}
 
 
 @media screen and (max-width: 768px) {
