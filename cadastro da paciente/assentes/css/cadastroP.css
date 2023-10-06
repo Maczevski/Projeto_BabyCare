@@ -20,35 +20,34 @@ body {
     background-color: #ffffff;
 }
 
- .container-menu {
+.container-menu {
      background-color: #333; /* Cor de fundo da barra lateral */
      color: #fff; /* Cor do texto na barra lateral */
-     padding: 20px;
- }
+    padding: 20px;
+}
 
- .barra_lateral {
-     text-align: center;
- }
+.barra_lateral {
+    text-align: center;
+}
 
- .imagem_perfil {
+.imagem_perfil {
      max-width: 100px; /* Largura máxima da imagem de perfil */
      border-radius: 50%; /* Tornar a imagem de perfil circular */
- }
- .input-grande {
+}
+.input-grande {
     height: 150px; /* Defina a altura desejada em pixels ou outra unidade de medida */
     width: 1160px;
-  }
-  
-  .input-box {
+}
+.input-box {
     overflow: hidden;
     position: relative;
-  }
-  .input-box input[type="file"] {
+}
+.input-box input[type="file"] {
     display: none;
-  }
+}
 
-  .input-box label {
-   left: 5%;
+.input-box label {
+left: 5%;
     right: 5px; /* Distância da direita da página */
     background-color: #5D54A4;
     color: #fff;
@@ -59,67 +58,65 @@ body {
     margin-right: 25%;
     border-radius: 20px;
 
-  }
- 
- ul {
-     list-style: none;
-     padding: 0;
- }
- 
- ul li {
-     margin-bottom: 10px;
- }
- 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
  /* Estilos para o formulário */
- .container {
-     padding: 20px;
- }
- 
- .form-label {
-     font-weight: bold;
- }
- 
- .form-control {
-     font-size: 16px;
-     padding: 10px;
- }
- 
+.container {
+    padding: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    font-size: 16px;
+    padding: 10px;
+}
+
  /* Botões */
- .btn-primary-cancelar {
+.btn-primary-cancelar {
      background-color: #5D54A4; /* Cor de fundo do botão "Cancelar" */
      color: #fff; /* Cor do texto no botão "Cancelar" */
-     border: none;
+    border: none;
      position: absolute; /* Posição absoluta em relação ao conteúdo */
     bottom: 20px; /* Distância do fundo da página */
- }
- 
- .btn-primary-salvar {
+}
+
+.btn-primary-salvar {
      background-color: #5D54A4; /* Cor de fundo do botão "Salvar" */
      color: #fff; /* Cor do texto no botão "Salvar" */
-     border: none;
+    border: none;
      position: absolute; /* Posição absoluta em relação ao conteúdo */
     bottom: 20px; /* Distância do fundo da página */
     right: 20px; /* Distância da direita da página */
- }
- 
+}
+
  /* Estilos para responsividade */
- @media (max-width: 768px) {
-     .container {
-         padding: 10px;
-     }
- 
-     .form-control {
-         font-size: 14px;
-         padding: 8px;
-     }
- 
-     .btn {
-         font-size: 14px;
-         padding: 8px 16px;
-     }
- }
- 
- 
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+}
+}
  /* Reset de estilos para remover margens e preenchimentos padrão */
 * {
     margin: 0;
@@ -129,7 +126,7 @@ body {
 
 /* Estilo para o menu lateral */
 .menu {
-    background-color: #9D65C9;
+    background-color: #bface0;
     color: #fff;
     width: 250px;
     height: 100%;
