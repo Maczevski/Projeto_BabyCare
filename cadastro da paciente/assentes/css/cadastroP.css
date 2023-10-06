@@ -196,5 +196,18 @@ ul li {
     cursor: pointer;
     align-items: center; 
     margin-right: 25%;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+#btnVoltar:hover {
+    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+    color: #fff;
+}
+
+.btn-primary-salvar:hover {
+    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+    color: #fff;
+}
+.btn-primary-cancelar:hover {
+    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+    color: #fff;
 }
