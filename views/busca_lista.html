@@ -13,7 +13,6 @@
         #search-container {
             margin: 50px auto;
             width: 70%;
-            border: 1px solid #ccc;
             border-radius: 10px;
             padding: 20px;
             background-color: #e6d7ff;
@@ -21,8 +20,10 @@
         #search-input {
             width: 97%;
             padding: 15px;
-            border: 1px solid #4f0955;
+            border: 1px solid #3c167a;
             border-radius: 5px;
+            background-color: #ffffffca;
+            color: #000000;
         }
         table {
             width: 100%;
@@ -42,11 +43,11 @@
             padding: 0;
         }
         li.patient {
-            border: 1px solid #a04e4e;
+            border: 1px solid #9165ca;
             border-radius: 10px;
             margin: 10px 0;
             padding: 10px;
-            background-color: #b94f4f;
+            background-color: #250529;
             cursor: pointer;
         }
         .patient-details {
@@ -58,13 +59,28 @@
             display: block;
             margin-bottom: 10px;
         }
+        .side-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #A084CA; 
+            color: #fff; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            margin-right: 10px; 
+        }
+.side-button:hover{
+    background-color: #46a169;
+}
     </style>
 </head>
 <body>
     <h1>Busca de Pacientes</h1>
 
     <div id="search-container">
-        <input type="text" id="search-input" placeholder="Digite o nome, idade, DUP, DPP ou risco do paciente">
+        <input type="text" id="search-input" placeholder="Digite o nome, idade, DUP ou DPP">
         <table>
             <thead>
                 <tr>
@@ -73,6 +89,7 @@
                     <th>DUP</th>
                     <th>DPP</th>
                     <th>Risco</th>
+                    <th>Detalhes</th>
                 </tr>
             </thead>
             <tbody id="patient-list">
@@ -82,6 +99,12 @@
                     <td>01/09/2023</td>
                     <td>20/09/2023</td>
                     <td>amarelo</td>
+                    <td >
+                    </button class="side-button" ></a>
+                    <a href="#"><button class="side-button">
+                        Detalhes
+                    </button></a>
+                    </td>
                 </tr>
                 <tr class="patient" data-name="Cris souza nunes" data-age="25" data-dup="15/11/2023" data-dpp="15/12/2023" data-risco="vermelho">
                     <td>Cris souza nunes</td>
@@ -89,6 +112,13 @@
                     <td>15/11/2023</td>
                     <td>15/12/2023</td>
                     <td>vermelho</td>
+                    <td>
+                    </button></a>
+                    <a href="#"><button class="side-button">
+                        Detalhes
+                    </button></a>
+                    </td>
+                    
                 </tr>
                 <tr class="patient" data-name="Carol Rodrigues" data-age="28" data-dup="10/02/2024" data-dpp="15/05/2024" data-risco="verde">
                     <td>Carol Rodrigues</td>
@@ -96,13 +126,59 @@
                     <td>10/02/2024</td>
                     <td>15/05/2024</td>
                     <td>verde</td>
+                    <td>
+                    </button></a>
+                    <a href="#"><button class="side-button">
+                        Detalhes
+                    </button></a>
+                    </td>
                 </tr>
-                <!--  -->
+                <tr class="patient" data-name="Maria Oliveira" data-age="28" data-dup="10/04/2023" data-dpp="15/06/2023" data-risco="verde">
+                    <td>Maria Oliveira</td>
+                    <td>28</td>
+                    <td>10/04/2023</td>
+                    <td>15/06/2023</td>
+                    <td>verde</td>
+                    <td>
+                    </button></a>
+                    <a href="#"><button class="side-button">
+                        Detalhes
+                    </button></a>
+                    </td>
+                </tr>
+                
+                <tr class="patient" data-name="Ana Silva" data-age="32" data-dup="25/08/2023" data-dpp="20/10/2023" data-risco="amarelo">
+                    <td>Ana Silva</td>
+                    <td>32</td>
+                    <td>25/08/2023</td>
+                    <td>20/10/2023</td>
+                    <td>amarelo</td>
+                    <td>
+                    </button></a>
+                    <a href="#"><button class="side-button">
+                        Detalhes
+                    </button></a>
+                    </td>
+                </tr>
+                
+                <tr class="patient" data-name="Isabella Costa" data-age="24" data-dup="15/12/2023" data-dpp="10/02/2024" data-risco="vermelho">
+                    <td>Isabella Costa</td>
+                    <td>24</td>
+                    <td>15/12/2023</td>
+                    <td>10/02/2024</td>
+                    <td>vermelho</td>
+                    <td>
+                    </button></a>
+                    <a href="#"><button class="side-button">
+                        Detalhes
+                    </button></a>
+                    </td>
+                </tr>
+                
             </tbody>
         </table>
         
         <div class="patient-details" id="patient-details">
-            <h2>Detalhes do Paciente</h2>
             <div class="patient-info">
                 <strong>Nome:</strong>
                 <span id="detail-name"></span>
@@ -127,15 +203,15 @@
     </div>
 
     <script>
-        const searchInput = document.getElementById("search-input");
-        const patientList = document.getElementById("patient-list");
-        const patients = patientList.getElementsByClassName("patient");
-        const patientDetails = document.getElementById("patient-details");
+        const searchInput = document.getElementById("search-input");//entrada do texto pelo usuario
+        const patientList = document.getElementById("patient-list");//lista/tabela de pacientes 
+        const patients = patientList.getElementsByClassName("patient");//linhas da tabela de pacientes
+        const patientDetails = document.getElementById("patient-details");//
         const detailName = document.getElementById("detail-name");
         const detailAge = document.getElementById("detail-age");
         const detailDup = document.getElementById("detail-dup");
         const detailDpp = document.getElementById("detail-dpp");
-        const detailRisco = document.getElementById("detail-risco");
+    
 
         for (const patient of patients) {
             patient.addEventListener("click", function () {
@@ -143,7 +219,7 @@
                 const age = patient.getAttribute("data-age");
                 const dup = patient.getAttribute("data-dup");
                 const dpp = patient.getAttribute("data-dpp");
-                const risco = patient.getAttribute("data-risco");
+                
 
                 detailName.textContent = name;
                 detailAge.textContent = age;
@@ -156,28 +232,26 @@
         }
 
         searchInput.addEventListener("input", function () {
-            const searchTerm = searchInput.value.trim().toLowerCase();
+    const searchTerm = searchInput.value.trim().toLowerCase();
 
-            for (const patient of patients) {
-                const name = patient.getAttribute("data-name").toLowerCase();
-                const age = patient.getAttribute("data-age").toLowerCase();
-                const dup = patient.getAttribute("data-dup").toLowerCase();
-                const dpp = patient.getAttribute("data-dpp").toLowerCase();
-                const risco = patient.getAttribute("data-risco").toLowerCase();
+    for (const patient of patients) {
+        const name = patient.getAttribute("data-name").toLowerCase();
+        const age = patient.getAttribute("data-age").toLowerCase();
+        const dup = patient.getAttribute("data-dup").toLowerCase();
+        const dpp = patient.getAttribute("data-dpp").toLowerCase();
 
-                if (
-                    name.includes(searchTerm) ||
-                    age.includes(searchTerm) ||
-                    dup.includes(searchTerm) ||
-                    dpp.includes(searchTerm) ||
-                    risco.includes(searchTerm)
-                ) {
-                    patient.style.display = "table-row";
-                } else {
-                    patient.style.display = "none";
-                }
-            }
-        });
+        if (
+            name.includes(searchTerm) ||
+            age.includes(searchTerm) ||
+            dup.includes(searchTerm) ||
+            dpp.includes(searchTerm)
+        ) {
+            patient.style.display = "table-row";
+        } else {
+            patient.style.display = "none";
+        }
+    }
+});
     </script>
 </body>
 </html>
