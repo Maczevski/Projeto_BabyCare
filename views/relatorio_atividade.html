@@ -86,7 +86,7 @@
             width: 100%;
             position: fixed;
             top: 0;
-            z-index: 1000;
+            z-index: 1000; 
         }
 
         /* Estilo para a lista de navegação */
@@ -112,112 +112,112 @@
         .Projeto {
             color: #fff;
             font-size: 24px;
-            margin-left: -100px; 
+            margin-left: -100px;
         }
-        .pagination {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            margin-left: 0px;
-        }
-        .page-item {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Estilizando o link ativo */
-        .page-item.active .page-link {
-            background-color: #6f4e87;
-            color: white;
-        }
-
-        /* Estilizando os links normais */
-        .page-link {
-            background-color: #E6D7FF;
-            color: black;
-            text-decoration: none;
-            padding: 5px 10px;
-            margin: 0 5px;
-            border-radius: 5px;
-        }
-
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <ul class="nav-list">
-            <b class="Projeto"> BabyCare</b>
-            <li class="nav-item"><a 
-                class="nav-link" href="/menu/assents/css/menu.html" >Menu</a></li>
+            <b class="Projeto">BabyCare</b>
+            <li class="nav-item"><a class="nav-link" href="/menu/assents/css/menu.html">Menu</a></li>
         </ul>
-    
     </div>
-
-    <h1>Relatorio</h1>
-
+    <h1>Relatório</h1>
     <div id="search-container">
-        <input type="text" id="search-input" placeholder="Digite o nome do usuario ou data da Modificação">
+        <input type="text" id="search-input" placeholder="Digite o nome do usuário ou data da Modificação">
         <table>
             <thead>
                 <tr>
-                    <th>Usuario</th>
+                    <th>Usuário</th>
                     <th>Data</th>
                     <th>Modificação</th>
                 </tr>
             </thead>
             <tbody id="patient-list">
-                <tr class="patient" data-name="alexa rodrigues" data-age="30" data-dup="01/09/2023" data-dpp="20/09/2023" data-risco="amarelo">
+                <tr class="patient" data-name="alexa rodrigues" data-date="01/09/2023" data-modification="amarelo">
                     <td>alexa rodrigues</td>
                     <td>01/09/2023</td>
-                    <td>amarelo</td>
+                    <td>Agendou um exame de ultrassonografia para Maria da silva</td>
                 </tr>
-                <tr class="patient" data-name="alexa rodrigues" data-age="30" data-dup="01/09/2023" data-dpp="20/09/2023" data-risco="amarelo">
+                <tr class="patient" data-name="Pedro rodrigues" data-date="02/09/2023" data-modification="adicionou a paciente Maria Pereira">
                     <td>Pedro rodrigues</td>
                     <td>02/09/2023</td>
-                    <td>adicionou a paciente Maria Pereira </td>
+                    <td>Adicionou a paciente Maria Pereira</td>
                 </tr>
-                <tr class="patient" data-name="alexa rodrigues" data-age="30" data-dup="01/09/2023" data-dpp="20/09/2023" data-risco="amarelo">
+                <tr class="patient" data-name="alexa rodrigues" data-date="01/09/2023" data-modification="amarelo">
                     <td>alexa rodrigues</td>
                     <td>01/09/2023</td>
-                    <td>amarelo</td>
+                    <td>registrou os resultados dos exames de sangue e urina pré-natais de Maria da silva</td>
                 </tr>
+                <tr class="patient" data-name="Maria Pereira" data-date="15/10/2022" data-modification="atualizou o endereço para Rua das Flores, 123">
+                    <td>Maria Pereira</td>
+                    <td>15/10/2022</td>
+                    <td>Atualizou o endereço de Julia Lima para Rua das Flores, 123</td>
+                </tr>
+                <tr class="neonatal" data-name="Fernando e Isabel Soares" data-date="08/11/2023" data-modification="adicionou anotações médicas sobre a saúde do bebê Sofia">
+                    <td>Fernando e Isabel Soares</td>
+                    <td>08/11/2023</td>
+                    <td>Adicionou anotações médicas a paciente Maria pereira</td>
+                </tr>
+                <tr class="patient" data-name="alexa rodrigues" data-date="01/09/2023" data-modification="amarelo">
+                    <td>alexa rodrigues</td>
+                    <td>01/09/2023</td>
+                    <td>Agendou um exame de ultrassonografia para Maria da silva</td>
+                </tr>
+                <tr class="patient" data-name="Pedro rodrigues" data-date="02/09/2023" data-modification="adicionou a paciente Maria Pereira">
+                    <td>Pedro rodrigues</td>
+                    <td>02/09/2023</td>
+                    <td>Adicionou a paciente Maria Pereira</td>
+                </tr>
+                <tr class="patient" data-name="alexa rodrigues" data-date="01/09/2023" data-modification="amarelo">
+                    <td>alexa rodrigues</td>
+                    <td>01/09/2023</td>
+                    <td>registrou os resultados dos exames de sangue e urina pré-natais de Maria da silva</td>
+                </tr>
+                <tr class="patient" data-name="Maria Pereira" data-date="15/10/2022" data-modification="atualizou o endereço para Rua das Flores, 123">
+                    <td>Maria Pereira</td>
+                    <td>15/10/2022</td>
+                    <td>Atualizou o endereço de Julia Lima para Rua das Flores, 123</td>
+                </tr>
+                <tr class="neonatal" data-name="Fernando e Isabel Soares" data-date="08/11/2023" data-modification="adicionou anotações médicas sobre a saúde do bebê Sofia">
+                    <td>Fernando e Isabel Soares</td>
+                    <td>08/11/2023</td>
+                    <td>Adicionou anotações médicas a paciente Maria pereira</td>
+                </tr>
+
 
             </tbody>
         </table>
-        
         <div class="patient-details" id="patient-details">
             <div class="patient-info">
                 <strong>Nome:</strong>
                 <span id="detail-name"></span>
             </div>
             <div class="patient-info">
-                <strong>data:</strong>
+                <strong>Data:</strong>
                 <span id="detail-date"></span>
             </div>
         </div>
     </div>
-    <nav aria-label="...">
-        <ul class="pagination">
-        <li class="page-item active" aria-current="page">
-            <span class="page-link">1</span>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        </ul>
-    </nav>
+    
 
     <script>
-        const searchInput = document.getElementById("search-input");//entrada do texto pelo usuario
-        const patientList = document.getElementById("patient-list");//lista/tabela de pacientes 
-        const patients = patientList.getElementsByClassName("patient");//linhas da tabela de pacientes
-        const patientDetails = document.getElementById("patient-details");//
+        const searchInput = document.getElementById("search-input");
+        const patientList = document.getElementById("patient-list");
+        const patients = patientList.getElementsByClassName("patient");
+        const patientDetails = document.getElementById("patient-details");
         const detailName = document.getElementById("detail-name");
-        const detaildade = document.getElementById("detail-date");
-    
+        const detailDate = document.getElementById("detail-date");
+
+        // Função para ocultar os detalhes do paciente
+        function hidePatientDetails() {
+            patientDetails.style.display = "none";
+        }
+
+        // Inicialmente, oculte os detalhes do paciente
+        hidePatientDetails();
 
         for (const patient of patients) {
             patient.addEventListener("click", function () {
@@ -225,31 +225,34 @@
                 const date = patient.getAttribute("data-date");
 
                 detailName.textContent = name;
-                detailAge.textContent = date;
+                detailDate.textContent = date;
 
                 patientDetails.style.display = "block";
             });
         }
 
         searchInput.addEventListener("input", function () {
-    const searchTerm = searchInput.value.trim().toLowerCase();
+            const searchTerm = searchInput.value.trim().toLowerCase();
 
-    for (const patient of patients) {
-        const name = patient.getAttribute("data-name").toLowerCase();
-        const date = patient.getAttribute("data-date").toLowerCase();
+            for (const patient of patients) {
+                const name = patient.getAttribute("data-name").toLowerCase();
+                const date = patient.getAttribute("data-date").toLowerCase();
+                const modification = patient.getAttribute("data-modification").toLowerCase();
 
+                if (
+                    name.includes(searchTerm) ||
+                    date.includes(searchTerm) ||
+                    modification.includes(searchTerm)
+                ) {
+                    patient.style.display = "table-row";
+                } else {
+                    patient.style.display = "none";
+                }
+            }
 
-        if (
-            name.includes(searchTerm) ||
-            date.includes(searchTerm) 
-
-        ) {
-            patient.style.display = "table-row";
-        } else {
-            patient.style.display = "none";
-        }
-    }
-});
+            // Ao atualizar a pesquisa, oculte os detalhes do paciente
+            hidePatientDetails();
+        });
     </script>
 </body>
 </html>
