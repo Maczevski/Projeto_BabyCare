@@ -140,6 +140,12 @@ body {
     flex-wrap: wrap;
     border-radius: 25px;
 }
+.consultations{
+    margin-left: 5%;
+}
+.cesarean{
+    background-color: #2a7e35;
+}
 
 .pending-appointments {
     display: flex;
