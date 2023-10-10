@@ -8,36 +8,37 @@
 </head>
 <body>
     <h1>Baby Care</h1>
-     
-    <section>
-        <button type="button">Gerenciar Conta</button>
-        <button type="button">Contas Cadastradas</button>
-        <button type="button">Relatório</button>
-    </section>
-    <h2>Editar Perfil</h2>
-    <hr>
-    <section>
-        <form action="processar_upload.php" method="post" enctype="multipart/form-data"> <!-- Preciso estudar como seubir a imagem -->
-            <label for="foto">Escolha uma foto:</label><br>
-            <input type="file" id="foto" name="foto" accept="image/*"><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-        <form action="" method="get">
-            <fieldset> 
-                <legend>NOME</legend>
-                <input type="text" required name="NOME"><br><br>
-                <legend>SOBRENOME</legend>
-                <input type="text" required name="SOBRENOME"><br><br>
-                <legend>CPF</legend>
-                <input type="number" required name="CPF"><br><br>
-            </fieldset> 
-            <hr>
-            <button type="button">Salvar</button>
-        </form>
-        <form action="" method="get">
-            <label for="Texto">Texto</label><br>
-            <textarea rows="5" name="Texto" id="Texto"></textarea>
-        </form>
-    </section>
+    
+<!-- Barra lateral -->
+<div class="menu">
+    <div class="logo">
+        <img src="assets/img/profile.png" alt="">
+    </div>
+    <div class="button-box">
+        <a href="#"><button type="button">Gerenciar Conta</button></a>
+        <a href="#"><button type="button">Contas Cadastradas</button></a>
+        <a href="#"><button type="button">Relatório</button></a>
+    </div>
+    <ul class="menu-list">
+        <a href="/menu/assets/css/menu.html"><button id="btnVoltar">Voltar</button></a>
+    </ul>
+</div>
+<div class="content">
+<div class="container">
+<form>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div class="foto">
+                <img src="views/img/login-user.png">
+            </div>
+            <div class="nome">
+                Cristina Pereira 
+            </div>
+        </div>
+    </div>
+</form>
+
+</div>
+</div>
 </body>
 </html>
