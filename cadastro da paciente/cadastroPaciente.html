@@ -95,9 +95,25 @@
       </form>
             
     
-        <!-- Bootstrap JavaScript  -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+      <script>
+          // Função para exibir o aviso
+          function exibirAviso() {
+              alert("Paciente cadastrada com sucesso!");
+          }
+      
+          // Captura o formulário
+          var formulario = document.querySelector('form');
+      
+          // Adiciona um evento de "submit" ao formulário
+          formulario.addEventListener('submit', function (e) {
+              e.preventDefault(); // Impede o envio padrão do formulário
+              exibirAviso(); // Chama a função de exibir aviso
+          });
+      </script>
+      
     
 </body>
 </html>
