@@ -486,9 +486,9 @@ font-size: large;
     width: 100vw;
     height: 100vh;
     background-color: #0000008e;
-     width: 100vw;
-     top: 0;
-     left: 0;
+    width: 100vw;
+    top: 0;
+    left: 0;
     z-index: 1000000;
 }
 
