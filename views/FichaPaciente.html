@@ -15,7 +15,6 @@
     <div class="wholescreen">
         <div class="side-ficha">
             <img src="img/profile.png" alt="profile-img" class="ficha-img"><br>
-
             <h3 class="nome-paciente">
                 Helena da Silva
             </h3>
@@ -25,11 +24,9 @@
             <!-- Abrir modal -->
             <button class="side-button" id="Abrir_agendamentos" onclick="abrir_modal()">Agendamento</button>
 
-            <a href="/menu/assents/css/menu.html"><button class="side-button">
+            <a href="/Projeto_BabyCare/menu/assents/css/menu.html"><button class="side-button">
                 Voltar ao menu
             </button></a>
-        
-
         </div>
         <div class="info-ficha">
             <div class="section1">
@@ -53,7 +50,7 @@
                 <div class="pragnancy-risk">
                     <div class="risk">
                         <label for="risco" class="risk-title">Risco:</label>
-                        <select id="risco" name="cor" class="risk-input" onchange="mudarCor(this)">
+                        <select id="risco" name="cor" class="risk-input">
                             <option hidden>Selecione</option>
                             <option value="#15EA1D" data-bgcolor="#15EA1D">Habitual</option>
                             <option value="#FFE500" data-bgcolor="#FFE500">Intermediário</option>
@@ -144,11 +141,15 @@
     </div>
 
     <script>
-        function mudarCor(selectElement) {
+        const selectElement = document.getElementById("risco");
+        function mudarCor() {
             var selectedOption = selectElement.options[selectElement.selectedIndex];
             var backgroundColor = selectedOption.getAttribute('data-bgcolor');
             selectElement.style.backgroundColor = backgroundColor;
         }
+
+        selectElement.addEventListener("change", mudarCor);
+
         var abrirModal = document.getElementById('abrirAgendamentos');
         var modalAgendamento = document.getElementById('janelaAgendamento');
         function abrir_modal(){
@@ -170,8 +171,9 @@
                 alert('Data inválida. Por favor, insira uma data válida.');
                 return false;
             } else {
-            fechar_modal();
-            return true;
+                alert('Consuta agendada com sucesso');
+                fechar_modal();
+                return true;
             }
 }
 
