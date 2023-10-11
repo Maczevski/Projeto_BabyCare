@@ -61,7 +61,7 @@ body {
         padding: 8px 16px;
 }
 }
- 
+
 * {
     margin: 0;
     padding: 0;
@@ -76,6 +76,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+
+
+
+    
     overflow-x: hidden;
     padding-top: 20px;
     align-items: center; 
@@ -102,9 +106,10 @@ body {
 .button-box button {
     background-color: #5D54A4; 
     border-radius: 10px;
+    width: 200px;
     cursor: pointer;
-    margin: 10px 10px; 
-    padding: 15px 30px; 
+    margin: 10px 30px; 
+    padding: 10px 30px; 
     border: none;
     color: #ffffff;
 }
@@ -126,12 +131,40 @@ body {
     background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
     color: #fff;
 }
-
-.btn-primary-salvar:hover {
-    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
-    color: #fff;
+.logo{
+    justify-content: center;
+    display: flex;
 }
-.btn-primary-cancelar:hover {
-    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+.logo img{
+    width:80%;
+    align-items: center;
+}
+
+.foto{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    gap:2vw
+}
+.foto img{
+    width: 150px;
+}
+
+.alterar-btn{
+    background-color: #5D54A4; 
     color: #fff;
+    border-radius: 10px;
+    border-style: none;
+    height: 2vw;
+    width: 8vw;
+}
+
+.content{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vw;
+    padding-left: 10vw;
+    
 }
