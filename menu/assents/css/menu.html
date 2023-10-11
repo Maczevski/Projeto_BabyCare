@@ -1,72 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baby Care</title>
-    <link rel="stylesheet" href="menu.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css"/>
 </head>
 <body>
     <header>
-        <h1>Baby Care</h1>
-    </header>
-
-    <nav>
-        <section>
-            <div class="button-row">
-                <a href="/Projeto_BabyCare/views/busca_lista.html"><button type="button">Lista de Pacientes</button></a>
-                <a href="/Projeto_BabyCare/cadastro da paciente/cadastroPaciente.html"><button type="button">Cadastrar Gestante</button></a>
-                <a href="/Projeto_BabyCare/views/relatorio_atividade.html"><button type="button">Relatório</button></a>
-                <a href="/Prox partos/PartosProx.html"><button type="button">Próximos Partos</button></a>
-                <a href="/Projeto_BabyCare/config/confing.html"><button type="button">Configurações</button></a>
-                <a href="/Projeto_BabyCare/index.html"><button type="button" class="logout-button">Sair</button></a> 
+        <nav>
+            <a class="logo" href="/">Baby Care</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-        </section>
-    </nav>
-    
-        <main>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Pacientes</th>
-                        <th>Estado da Gravidez</th>
-                        <th>Bairro</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Fernanda</td>
-                        <td>Médio-risco</td>
-                        <td>Centro</td>
-                    </tr>
-                    <tr>
-                        <td>Bruna</td>
-                        <td>Normal</td>
-                        <td>Morumbi</td>
-                    </tr>
-                    <tr>
-                        <td>Marcela</td>
-                        <td>Médio-risco</td>
-                        <td>Centro</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <section>
-                <form action="" method="get">
-                    <label for="observacao">Campo de Observação</label><br>
-                    <textarea id="observacao" rows="10"></textarea>
-                </form>
-            </section>
-        </main>
-
-    <footer>
-        <h2 id="proximos-pacientes">Pacientes 25-09-2023</h2>
-        <div class="patient-buttons">
-            <button type="button">Maria Silva</button>
-            <button type="button">Roberta Rodrigues</button>
-            <button type="button">Ana Maria S. Pinto</button>
+            
+        </nav>
+    </header>
+    <div class="TelaMenu">
+        
+        <div class="MenuLateral">
+            <div class="img-container">
+                <img class="Profile-img" src="./img/profile.png" alt="imagem">
+            </div>
+            <div class="Button-container">
+                <Button class="menu-button">Lista de Pacientes</Button>
+                <Button class="menu-button">Cadastrar Gestantes</Button>
+                <Button class="menu-button">Relatório</Button>
+                <Button class="menu-button">Próximos Partos</Button>
+                <Button class="menu-button">Configurações</Button>
+            </div>
+            <div class="Sair">
+                <a class="Sair-Login" href="#">Sair</a>
+            </div>
         </div>
-    </footer>
+            <div class="info-consultas"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.3218807936933!2d-54.556537789258385!3d-25.527652936668392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f690e547de95fd%3A0xfbff5cd224068d02!2sUBS%20Campos%20do%20Igua%C3%A7u!5e0!3m2!1spt-PT!2sbr!4v1696979771326!5m2!1spt-PT!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </div>
+</div>
 </body>
 </html>
+
+

@@ -1,105 +1,145 @@
-* {
+.TelaMenu {
+    background: linear-gradient( #e6d7ff, #bface0);
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.MenuLateral{
+    margin-top: 5vh;
+    width: 25vw;
+    background-color: #A084CA;
+    height: 100%;
+    border-top-right-radius: 20px;
+}
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #E6D7FF;
-    margin: 0;
-    padding: 0;
+nav a {
+    color: purple; 
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-
-header {
-    background-color: #5D54A4;
-    color: white;
-    text-align: center;
-    padding: 10px;
+nav a:hover {
+    opacity: 0.7;
 }
+    nav a {
+    color: #f4f1f6;
+    text-decoration: none;
+    transition: 0.3s;
+    }
+    nav a:hover {
+    opacity: 0.7;
+    }
 
-
-header h1 {
+.logo {
     font-size: 24px;
-}
-
-
-.button-row {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    }
+    nav {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #9D65C9;
-}
-
-.button-row button {
-    background-color: #5D54A4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #9D65C9;
+    height: 8vh;
+    }
+.mobile-menu {
+    display: none;
     cursor: pointer;
-    margin: 5px;
+    }
+    
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(158, 63, 225);
+    margin: 8px;
+    transition: 0.3s;
+    }
+    
+    @media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    }
+    .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+    opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    }
+    nav {
+    height: 9vh; 
+    }
+    
+    .nav-list {
+    margin-left: auto; 
+    }
+    
+    .nav-list li {
+    letter-spacing: 5px; 
+    margin-left: 50px; 
+    }
+
+.Profile-img{
+    position: relative;
+    width: 30%;
+    left: 50%;
+    margin-top: 2vh;
+    transform: translate(-50%);
 }
 
-.button-row button:hover {
-    background-color: #9D65C9;
+.Button-container{
+    display: flex;
+    flex-direction: column;
+}
+    
+.menu-button{
+    color: #000000;
+    margin: 2vh auto;
+    width: 60%;
+    height: 7vh;
+    border: none;
+    border-radius: 20px; 
+    background-color: #bface0;
+    cursor: pointer;
+
+}
+
+.menu-button:hover{
+    background-color: #cedebd;
+}
+
+.Sair{
+    margin-top: 8vh;
+    margin-left: 2vw;
+}
+.Sair-Login{
+    text-decoration: none;
+    color: #000000;
 }
 
 
-.logout-button {
-    background-color: #ff4444;
-}
-
-.logout-button:hover {
-    background-color: #ff0000;
-}
-
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-}
-
-table, th, td {
-    border: 1px solid #5D54A4;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-}
-
-
-#observacao {
-    border: 2px solid #5D54A4;
-    width: 100%;
-    padding: 10px;
-}
-
-footer {
-    background-color: #5D54A4;
-    color: white;
+.info-consultas{
+    width: 90%;
+    padding: 2vw;
+    margin: 4vw;
+    background-color: #A084CA;
+    height:80vh;
+    border-radius: 25px; 
     text-align: center;
-    padding: 10px;
-}
-
-
-.patient-buttons {
-    margin-top: 10px;
-}
-
-.patient-buttons button {
-    background-color: #9D65C9;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin: 5px;
-}
-
-.patient-buttons button:hover {
-    background-color: #5D54A4;
 }

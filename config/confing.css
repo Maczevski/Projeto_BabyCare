@@ -1,16 +1,20 @@
-/* Estilos globais */
 body {
     background-color: #E6D7FF;
-    margin: 0; /* Para remover margens padrão do body */
+    margin: 0; 
     margin-top: -30px;
     font-family: Arial, sans-serif;
 }
 
+.content {
+    margin-left: 250px; /* A largura do menu lateral */
+    padding: 20px;
+}
 .container {
     background-color: #E6D7FF; /* Mesma cor de fundo que o body */
     /* Outros estilos para o container */
     color: #000000;
     font-weight: bold;
+    position: absolute;
 }
 .form-div {
     margin-bottom: 20% ; /* Adicione espaço abaixo das divs do formulário */
@@ -20,69 +24,9 @@ body {
     background-color: #ffffff;
 }
 
-.container-menu {
-     background-color: #333; /* Cor de fundo da barra lateral */
-     color: #fff; /* Cor do texto na barra lateral */
-    padding: 20px;
-}
-
 .barra_lateral {
     text-align: center;
 }
-
-.imagem_perfil {
-     max-width: 100px; /* Largura máxima da imagem de perfil */
-     border-radius: 50%; /* Tornar a imagem de perfil circular */
-}
-.input-grande {
-    height: 150px; /* Defina a altura desejada em pixels ou outra unidade de medida */
-    width: 1160px;
-}
-.input-box {
-    overflow: hidden;
-    position: relative;
-}
-.input-box input[type="file"] {
-    display: none;
-}
-
-.input-box label {
-left: 5%;
-    right: 5px; /* Distância da direita da página */
-    background-color: #5D54A4;
-    color: #fff;
-    padding: 4px 5px;
-    cursor: pointer;
-    border-radius: 5px;
-    align-items: center; 
-    margin-right: 25%;
-    border-radius: 20px;
-
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
- /* Estilos para o formulário */
-.container {
-    padding: 20px;
-}
-
-.form-label {
-    font-weight: bold;
-}
-
-.form-control {
-    font-size: 16px;
-    padding: 10px;
-}
-
  /* Botões */
 .btn-primary-cancelar {
      background-color: #5D54A4; /* Cor de fundo do botão "Cancelar" */
@@ -117,14 +61,13 @@ ul li {
         padding: 8px 16px;
 }
 }
- /* Reset de estilos para remover margens e preenchimentos padrão */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo para o menu lateral */
 .menu {
     background-color: #bface0;
     color: #fff;
@@ -133,45 +76,17 @@ ul li {
     position: fixed;
     top: 0;
     left: 0;
+
+
+
+    
     overflow-x: hidden;
     padding-top: 20px;
     align-items: center; 
 
 }
 
-.menu .logo {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
-.menu .logo img {
-    width: 100px; 
-}
-
-.menu-list {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-list li {
-    padding: 10px 20px;
-}
-
-.menu-list li a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-}
-
-.menu-list li a:hover {
-    background-color: #994cd8;
-}
-
-/* Estilo para o conteúdo principal */
-.content {
-    margin-left: 250px; /* A largura do menu lateral */
-    padding: 20px;
-}
 
 /* Estilo para tornar o menu lateral responsivo */
 @media (max-width: 768px) {
@@ -184,11 +99,25 @@ ul li {
     }
 }
 
+.button-box {
+    text-align: center; /* Centraliza os botões horizontalmente */
+}
+
+.button-box button {
+    background-color: #5D54A4; 
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin: 10px 30px; 
+    padding: 10px 30px; 
+    border: none;
+    color: #ffffff;
+}
 /*botão voltar*/
 #btnVoltar {
-    position: absolute; /* Posição absoluta em relação ao conteúdo */
-    bottom: 20px; /* Distância do fundo da página */
-    right: 20px; /* Distância da direita da página */
+    position: absolute; 
+    bottom: 20px;
+    right: 20px;
     padding: 10px 20px;
     background-color: #5D54A4;
     color: #fff;
@@ -202,12 +131,40 @@ ul li {
     background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
     color: #fff;
 }
-
-.btn-primary-salvar:hover {
-    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
-    color: #fff;
+.logo{
+    justify-content: center;
+    display: flex;
 }
-.btn-primary-cancelar:hover {
-    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+.logo img{
+    width:80%;
+    align-items: center;
+}
+
+.foto{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    gap:2vw
+}
+.foto img{
+    width: 150px;
+}
+
+.alterar-btn{
+    background-color: #5D54A4; 
     color: #fff;
+    border-radius: 10px;
+    border-style: none;
+    height: 2vw;
+    width: 8vw;
+}
+
+.content{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vw;
+    padding-left: 10vw;
+    
 }
