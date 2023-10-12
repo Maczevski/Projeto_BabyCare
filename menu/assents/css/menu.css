@@ -108,6 +108,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     margin-left: 5vw;
+    margin-left: 10px;
 }
     
 .menu-button{
@@ -123,7 +124,7 @@ nav a:hover {
 }
 
 .menu-button:hover{
-    background-color: #cedebd;
+    background-color: #CEDEBD;
 }
 
 .Sair{

@@ -8,14 +8,20 @@ body {
 .content {
     margin-left: 250px; /* A largura do menu lateral */
     padding: 20px;
+    margin-top: -92px;
+    
 }
 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     background-color: #E6D7FF; /* Mesma cor de fundo que o body */
     /* Outros estilos para o container */
     color: #000000;
     font-weight: bold;
     position: absolute;
 }
+
 .form-div {
     margin-bottom: 20% ; /* Adicione espaço abaixo das divs do formulário */
 }
@@ -27,28 +33,11 @@ body {
 .barra_lateral {
     text-align: center;
 }
- /* Botões */
-.btn-primary-cancelar {
-     background-color: #5D54A4; /* Cor de fundo do botão "Cancelar" */
-     color: #fff; /* Cor do texto no botão "Cancelar" */
-    border: none;
-     position: absolute; /* Posição absoluta em relação ao conteúdo */
-    bottom: 20px; /* Distância do fundo da página */
-}
-
-.btn-primary-salvar {
-     background-color: #5D54A4; /* Cor de fundo do botão "Salvar" */
-     color: #fff; /* Cor do texto no botão "Salvar" */
-    border: none;
-     position: absolute; /* Posição absoluta em relação ao conteúdo */
-    bottom: 20px; /* Distância do fundo da página */
-    right: 20px; /* Distância da direita da página */
-}
 
  /* Estilos para responsividade */
 @media (max-width: 768px) {
     .container {
-        padding: 10px;
+        padding: 50px;
     }
 
     .form-control {
@@ -76,17 +65,11 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-
-
-
-    
     overflow-x: hidden;
     padding-top: 20px;
     align-items: center; 
 
 }
-
-
 
 /* Estilo para tornar o menu lateral responsivo */
 @media (max-width: 768px) {
@@ -104,15 +87,21 @@ body {
 }
 
 .button-box button {
-    background-color: #5D54A4; 
+    background-color: #5D54A4;
     border-radius: 10px;
     width: 200px;
     cursor: pointer;
-    margin: 10px 30px; 
-    padding: 10px 30px; 
+    margin: 10px 30px;
+    padding: 10px 30px;
     border: none;
     color: #ffffff;
 }
+
+.button-box button:hover {
+    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+    color: #fff;
+}
+
 /*botão voltar*/
 #btnVoltar {
     position: absolute; 
@@ -144,10 +133,11 @@ body {
     display: flex;
     align-items:center ;
     justify-content: center;
-    gap:2vw
+    gap:2vw;
+    margin-left: -55%;
 }
 .foto img{
-    width: 150px;
+    width: 120px;
 }
 
 .alterar-btn{
@@ -158,24 +148,26 @@ body {
     height: 2vw;
     width: 8vw;
 }
+.alterar-btn:hover{
+background-color: #46a169; 
+}
 
 .content{
     display: flex ;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 10vw;
-    padding-left: 10vw;
+    padding-top: 8vw;
+    padding-left: 8vw;
     
 }
 .inputs-edicao {
-    background-color: #bface0;  
+    background-color: #bface0;
     border-radius: 15px; 
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); 
     padding: 35px; 
     margin: 35px ; 
-    width: 800px;
-
+    width: 900px;
 }
 
 .inputs-edicao label {
@@ -187,8 +179,8 @@ body {
 .inputs-edicao input {
     width: calc(100% - 40px); 
     padding: 15px;
-    background-color: #ffffff53;
-    border: 1px solid #5b0c78; 
+    background-color: #ffffff;
+    border: none;
     border-radius: 10px; 
     box-sizing: border-box; 
     margin-bottom: 20px
@@ -212,3 +204,14 @@ body {
     height: 3vw;
     border-radius: 1vw;
 }
+#btn-salvar:hover {
+    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+    color: #fff;
+}
+.nome-sobrenome {
+    display: inline-block;
+    margin-right: 2px; /* Adicione margem direita para separação entre os campos */
+    vertical-align: top; /* Alinha os campos na parte superior */
+    width: 49%;
+}
+
