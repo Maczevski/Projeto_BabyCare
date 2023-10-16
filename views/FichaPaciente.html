@@ -16,7 +16,7 @@
         <div class="side-ficha">
             <img src="img/profile.png" alt="profile-img" class="ficha-img"><br>
             <h3 class="nome-paciente">
-                Helena da Silva
+                Alexa Rodrigues
             </h3>
             <h4 class="idade-gestacional">
                 15 semanas
@@ -51,7 +51,7 @@
                     <div class="risk">
                         <label for="risco" class="risk-title">Risco:</label>
                         <select id="risco" name="cor" class="risk-input">
-                            <option hidden>Selecione</option>
+                            <option hidden >Selecione</option>
                             <option value="#15EA1D" data-bgcolor="#15EA1D">Habitual</option>
                             <option value="#FFE500" data-bgcolor="#FFE500">Intermediário</option>
                             <option value="#FC0000" data-bgcolor="#FC0000">Alto</option>
@@ -122,9 +122,6 @@
             <span class="fechar" onclick="fechar_modal()">&times;</span>
             <h2>Agendar Consulta</h2>
             <form id="appointment-form">
-                <label class="text-agendamento" for="patient-name">Nome do Paciente:</label><br>
-                <input class="campo-agendamento" type="text" id="patient-name" required><br><br>
-    
                 <label  class="text-agendamento" for="appointment-type">Tipo de Consulta:</label><br>
                 <select class="campo-agendamento" id="appointment-type" required>
                     <option value="trimestral">Trimestral</option>
@@ -159,15 +156,12 @@
             modalAgendamento.style.display = 'none';
         }
         function agendar_consulta() {
-            var nome = document.getElementById('patient-name').value;
             var dataInput = document.getElementById('appointment-date').value;
             var data_agendamento = new Date(dataInput);
             var data_atual = new Date();
             
-            if (nome === '') {
-                alert('Por favor, insira o nome do paciente.');
-                return false;
-            } else if (isNaN(data_agendamento.getTime()) || data_agendamento <= data_atual) {
+           
+            if (isNaN(data_agendamento.getTime()) || data_agendamento <= data_atual) {
                 alert('Data inválida. Por favor, insira uma data válida.');
                 return false;
             } else {
@@ -176,7 +170,6 @@
                 return true;
             }
 }
-
     </script>
     
 </body>

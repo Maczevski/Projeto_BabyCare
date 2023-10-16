@@ -15,6 +15,7 @@ textarea:focus{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #CEDEBD;
 }
 
 .body-ficha{
@@ -50,7 +51,7 @@ textarea:focus{
 .login-screen{
     flex: 100%;
     position: relative;
-    background-color: #bb91ee;
+    background-color: #CEDEBD;
     width: 100%;
     z-index: 10;
 }
@@ -125,7 +126,8 @@ font-size: large;
 }
 .anchor{
     text-decoration: none;
-    color: #0000008c;;
+    color: #0000008c;
+    cursor: pointer;
 }
 .anchor:hover{
     color: #000000;
@@ -520,12 +522,13 @@ font-size: large;
 
 .text-agendamento{
     font-family: 'Roboto';
+    margin-top: 20px;
    
 }
 
 .campo-agendamento{
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     width: 85%;
     height: 30px;
     box-sizing: border-box;
