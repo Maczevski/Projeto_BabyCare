@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 .TelaMenu {
     background: linear-gradient( #e6d7ff, #bface0);
     height: 100vh;
@@ -128,20 +132,15 @@ nav a:hover {
 }
 /* So preciso alinhar essa saida*/
 .Sair{  
-    margin-top: 3vh;
-    margin-left: 7vw;
+    margin-top: 9vh;
+    margin-left: 3vw;
     color: #000000;
     width: 18vh;
-    border: #A084CA;
     border: none;
     border-radius: 20px; 
-    background-color: #bface0;
     cursor: pointer;
 }
 
-.sair-button :hover {
-    background-color: #CEDEBD;
-}
 
 .Sair-Login{
     text-decoration: none;
