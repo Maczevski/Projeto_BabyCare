@@ -46,6 +46,7 @@ nav a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     }
+    
     nav {
     display: flex;
     justify-content: space-around;
@@ -150,7 +151,7 @@ nav a:hover {
 
 .info-consultas{
     width: 90%;
-    padding: 2vw;
+    padding: 1vw;
     margin: 4vw;
     background-color: #A084CA;
     height:80vh;
