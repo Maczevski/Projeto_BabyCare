@@ -50,7 +50,7 @@ textarea:focus{
 .login-screen{
     flex: 100%;
     position: relative;
-    background-color: #CEDEBD;
+    background-color: #bb91ee;
     width: 100%;
     z-index: 10;
 }
@@ -63,7 +63,7 @@ textarea:focus{
     transform: translate(-50%, -50%);
     width: 400px;
     height: 450px;
-    background-color: #bface0;
+    background-color: #cebee7;
 }
 
 .title-container{
