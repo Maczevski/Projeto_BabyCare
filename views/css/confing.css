@@ -1,0 +1,264 @@
+body {
+    background-color: #E6D7FF;
+    margin: 0; 
+    margin-top: -30px;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    margin-left: 250px; /* A largura do menu lateral */
+    padding: 20px;
+    margin-top: -92px;
+    
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #E6D7FF; /* Mesma cor de fundo que o body */
+    /* Outros estilos para o container */
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+}
+
+.form-div {
+    margin-bottom: 20% ; /* Adicione espaço abaixo das divs do formulário */
+}
+.form-control{
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.barra_lateral {
+    text-align: center;
+}
+
+ /* Estilos para responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 50px;
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: #bface0;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    align-items: center; 
+
+}
+
+/* Estilo para tornar o menu lateral responsivo */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+.button-box {
+    text-align: center; /* Centraliza os botões horizontalmente */
+}
+
+.button-box button {
+    background-color: #5D54A4;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin: 10px 30px;
+    padding: 10px 30px;
+    border: none;
+    color: #ffffff;
+}
+
+.button-box button:hover {
+    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+    color: #fff;
+}
+
+/*botão voltar*/
+#btnVoltar {
+    position: absolute; 
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #5D54A4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-items: center; 
+    margin-right: 25%;
+    border-radius: 10px;
+}
+#btnVoltar:hover {
+    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+    color: #fff;
+}
+.logo{
+    justify-content: center;
+    display: flex;
+}
+.logo img{
+    width:80%;
+    align-items: center;
+}
+
+.foto{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    gap:2vw;
+    margin-left: -55%;
+}
+.foto img{
+    width: 120px;
+}
+
+.alterar-btn{
+    background-color: #5D54A4; 
+    color: #fff;
+    border-radius: 10px;
+    border-style: none;
+    height: 2vw;
+    width: 8vw;
+}
+.alterar-btn:hover{
+background-color: #46a169; 
+}
+
+.content{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8vw;
+    padding-left: 8vw;
+    
+}
+.inputs-edicao {
+    background-color: #bface0;
+    border-radius: 15px; 
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); 
+    padding: 35px; 
+    margin: 35px ; 
+    width: 900px;
+}
+
+.inputs-edicao label {
+    font-weight: bold;
+    color: #000000; 
+    margin-bottom: 25px; 
+    
+}
+.inputs-edicao input {
+    width: calc(100% - 40px); 
+    padding: 15px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    margin-bottom: 20px
+}
+
+.inputs-edicao input:focus {
+    border-color: #5b0c78;  
+    outline: none; 
+}
+
+.buttons-edicao {
+    display: flex;
+    justify-content: center;
+}
+#btn-salvar{
+    background-color: #5D54A4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 1vw;
+}
+#btn-salvar:hover {
+    background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
+    color: #fff;
+}
+.nome-sobrenome {
+    display: inline-block;
+    margin-right: 2px; /* Adicione margem direita para separação entre os campos */
+    vertical-align: top; /* Alinha os campos na parte superior */
+    width: 49%;
+}
+
+
+/* o CSS do MODAL --------------------------------------------------------------------Kaila*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#user-info {
+    font-size: 16px;
+}
+
+.modal-content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
