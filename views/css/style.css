@@ -40,6 +40,7 @@ textarea:focus{
 }
 
  .imagem-babycare{
+    margin-bottom: 0%;
     position: absolute;
     margin-left: 70px;
     width: auto;
@@ -541,7 +542,6 @@ font-size: large;
     width: 15vw;
     height: 8vh;
     position: relative;
-    margin-top: 50px;
     left: 50%;
     transform: translate(-80%);
     border-radius: 20px;
@@ -554,5 +554,26 @@ font-size: large;
 }
 
 
-@media screen and (max-width: 768px) {
+.save-container{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.save-button{
+    color: #ffff;
+    padding: 8px;
+    text-align: center;
+    background-color: #9D65C9;
+    border-radius: 25px;
+    border: none;
+    width: 12vw;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.save-button:hover{
+    background-color: #CEDEBD;
+    border: solid #bface0 2px;
 }
