@@ -47,8 +47,8 @@
                         </div>
                     </div>
                     <div class="date-consulta">
-                        <label for="consulta">Consulta:</label>
-                        <input type="number" value="21" class="consulta-input" id="consulta">
+                        <label for="consulta">Micro-area:</label>
+                        <input type="number" value="16" class="consulta-input" id="consulta">
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@
 
                     </div>
                     <div class="personal-info">
-                        <label for="phone-number">Numero: </label>
+                        <label for="phone-number">Celular: </label>
                         <input id="phone-number" class="personal-input" value="45 99836-9465"><br>
                         <label for="adress">Endereço: </label>
                         <input id="adress" class="personal-input" value="Rua Comendador Franco, 765">
@@ -80,7 +80,11 @@
             <div class="section2">
                 <div class="container2">
                     <h3>Consultas</h3>
-                    <textarea class="info-text">
+                    <textarea class="info-text">Consulta médica 15/09/2023
+Ausente
+
+Consulta médica 18/10/2023
+Agendada
 
                     </textarea>
 
@@ -110,7 +114,7 @@
                     <textarea class="doctor-text">Médico responsável: Arthur de Oliveira</textarea>
 
                     <div class="info-parto">
-                        <textarea class="obs-parto"></textarea>
+                        <textarea class="obs-parto">Observações</textarea>
                         
                         <div class="parto-checklist">
                             <label>List</label>
@@ -150,12 +154,12 @@
     <script>
         const selectElement = document.getElementById("risco");
         function mudarCor() {
-            var selectedOption = selectElement.options[selectElement.selectedIndex];
-            var backgroundColor = selectedOption.getAttribute('data-bgcolor');
+            var selectedOption = selectElement.options[selectElement.selectedIndex];//Retorna o índice da opção que está atualmente selecionada
+            var backgroundColor = selectedOption.getAttribute('data-bgcolor');//Atribui o data-bgcolor da opcao a variavel
             selectElement.style.backgroundColor = backgroundColor;
         }
 
-        selectElement.addEventListener("change", mudarCor);
+        selectElement.addEventListener("change", mudarCor);//Ao mudar a opcao chama a funcao mudarCor
 
         var abrirModal = document.getElementById('abrirAgendamentos');
         var modalAgendamento = document.getElementById('janelaAgendamento');
@@ -170,7 +174,6 @@
             var data_agendamento = new Date(dataInput);
             var data_atual = new Date();
             
-           
             if (isNaN(data_agendamento.getTime()) || data_agendamento <= data_atual) {
                 alert('Data inválida. Por favor, insira uma data válida.');
                 return false;
