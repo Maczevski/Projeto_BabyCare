@@ -212,6 +212,7 @@ ul li {
     color: #fff;
 }
 select {
+    border: none;
     border-radius: 15px;
     width: 555px; /* Valor ajustável para controlar a largura */
     padding: 10px; /* Adiciona um espaço interno para melhorar a aparência */
