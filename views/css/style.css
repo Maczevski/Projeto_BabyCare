@@ -82,6 +82,7 @@ textarea:focus{
 
 .info-container{
     padding: 30px
+
 }
 
 
@@ -104,6 +105,7 @@ font-size: large;
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 2px;
+    border-radius: 5px;
 }
 
 .login-input:focus{
