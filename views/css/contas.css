@@ -1,0 +1,94 @@
+body{
+    overflow: hidden;
+}
+
+.Tela {
+    background: linear-gradient( #bd7ed1, #bface0);
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: purple; 
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+    nav a {
+    color: #f4f1f6;
+    text-decoration: none;
+    transition: 0.3s;
+    }
+    nav a:hover {
+    opacity: 0.7;
+    }
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    }
+    
+    nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #9D65C9;
+    height: 8vh;
+    }
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    }
+    
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(158, 63, 225);
+    margin: 8px;
+    transition: 0.3s;
+    }
+    
+    @media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    }
+    .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+    opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    }
+    nav {
+    height: 9vh; 
+    }
+    
+    .nav-list {
+    margin-left: auto; 
+    }
+    
+    .nav-list li {
+    letter-spacing: 5px; 
+    margin-left: 50px; 
+    }
+
