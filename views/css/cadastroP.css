@@ -211,3 +211,8 @@ ul li {
     background-color: #46a169; /* Cor diferente quando o mouse passa sobre o botão */
     color: #fff;
 }
+select {
+    border-radius: 15px;
+    width: 555px; /* Valor ajustável para controlar a largura */
+    padding: 10px; /* Adiciona um espaço interno para melhorar a aparência */
+}
