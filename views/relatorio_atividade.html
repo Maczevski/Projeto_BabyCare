@@ -9,15 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <ul class="nav-list">
-            <b class="Projeto">BabyCare</b>
-            <li class="nav-item"><a class="nav-link" href="menu.html">
-                <i class="fa-solid fa-house-medical"></i>
-                Menu</a></li>
+   <!-- Navbar -->
+   <div class="navbar">
+    <nav class="menu-navegacao">
+        <ul>
+            <li class="Projeto">BabyCare </li>
+            <li class="dropdown">
+                <a class="navbar-text" href="menu.html">Menu</a>
+                <ul class="dropdown-content">
+                    <li><a href="cadastroPaciente.html">Cadastrar Pacientes</a></li>
+                    <li><a href="relatorio_atividade.html">Relatório</a></li>
+                    <li><a href="PartosProx.html">Próximos Partos</a></li>
+                    <li><a href="confing.html">Configurações</a></li>
+                </ul>
+            </li>
         </ul>
-    </div>
+    </nav>
+</div>
     <h1>Relatório</h1>
     <div id="search-container">
         <input type="text" id="search-input" placeholder="Digite o nome do usuário ou data da Modificação">
