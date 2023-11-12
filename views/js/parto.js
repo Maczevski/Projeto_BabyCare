@@ -13,6 +13,24 @@ document.addEventListener("DOMContentLoaded", function() {
     carregarOpcaoSalva('mySelect12');
 
 });
+document.addEventListener("DOMContentLoaded", function() {
+    carregarOpcaoSalva('mySelect5');
+    carregarOpcaoSalva('mySelect6');
+    carregarOpcaoSalva('mySelect7');
+    carregarOpcaoSalva('mySelect8');
+    carregarOpcaoSalva('mySelect9');
+    carregarOpcaoSalva('mySelect10');
+    carregarOpcaoSalva('mySelect11');
+    carregarOpcaoSalva('mySelect12');
+
+});
+document.addEventListener("DOMContentLoaded", function() {
+    carregarOpcaoSalva('mySelect9');
+    carregarOpcaoSalva('mySelect10');
+    carregarOpcaoSalva('mySelect11');
+    carregarOpcaoSalva('mySelect12');
+
+});
 function changeColor(selectElement) {
     const selectedOption = selectElement.options[selectElement.selectedIndex];
     const riskSelect = selectElement;
