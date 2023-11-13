@@ -1,9 +1,9 @@
 /* AS CONFI DO MODAL */
-var modal = document.getElementById("myModal"); 
+var modal = document.getElementById("myModal");
 var btn = document.getElementById("btn-salvar");
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn.onclick = function () {
     var nomeUsuario = document.getElementById("nome-usuario").value;
     var nome = document.getElementById("nome").value;
     var sobrenome = document.getElementById("sobrenome").value;
@@ -13,22 +13,22 @@ btn.onclick = function() {
     var cpf = document.getElementById("cpf").value;
 
     var userInfo = "Nome do Usuário: " + nomeUsuario +
-                "<br>Nome: " + nome +
-                "<br>Sobrenome: " + sobrenome +
-                "<br>Telefone: " + telefone +
-                "<br>Email: " + email +
-                "<br>Data de Nascimento: " + dataNascimento +
-                "<br>CPF: " + cpf;
+        "<br>Nome: " + nome +
+        "<br>Sobrenome: " + sobrenome +
+        "<br>Telefone: " + telefone +
+        "<br>Email: " + email +
+        "<br>Data de Nascimento: " + dataNascimento +
+        "<br>CPF: " + cpf;
 
     document.getElementById("user-info").innerHTML = userInfo;
     modal.style.display = "block";
 }
 
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }

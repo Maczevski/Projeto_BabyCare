@@ -6,40 +6,40 @@ textarea {
     resize: none;
 }
 
-textarea:focus{
+textarea:focus {
     outline: none;
 }
 
 
-.body-login{
+.body-login {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #CEDEBD;
 }
 
-.body-ficha{
+.body-ficha {
     background-color: #e6d7ff;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-.wholescreen-container{
+.wholescreen-container {
     position: relative;
     margin: 0;
     display: flex;
     height: 100vh;
 }
 
-.sideview{
+.sideview {
     width: 580px;
     height: 100%;
     background: #ffff;
     float: left;
 }
 
- .imagem-babycare{
+.imagem-babycare {
     margin-bottom: 0%;
     position: absolute;
     margin-left: 70px;
@@ -48,9 +48,9 @@ textarea:focus{
     height: 100%;
     z-index: 10000;
     margin-bottom: 0%;
-} 
+}
 
-.login-screen{
+.login-screen {
     flex: 100%;
     position: relative;
     background-color: #CEDEBD;
@@ -58,7 +58,7 @@ textarea:focus{
     z-index: 10;
 }
 
-.login-container{
+.login-container {
     z-index: 10;
     position: relative;
     left: 50%;
@@ -69,30 +69,29 @@ textarea:focus{
     background-color: #cebee7;
 }
 
-.title-container{
+.title-container {
     text-align: center;
     height: 80px;
     background-color: #A084CA;
 }
 
-.login-title{
+.login-title {
     padding: 20px;
     font-size: 35px;
 }
 
-.info-container{
+.info-container {
     padding: 30px
-
 }
 
 
-.login-text{
-margin-left: 5px;
-color: #000000a6;
-font-size: large;
+.login-text {
+    margin-left: 5px;
+    color: #000000a6;
+    font-size: large;
 }
 
-.login-input{
+.login-input {
     font-size: medium;
     position: relative;
     left: 50%;
@@ -108,10 +107,11 @@ font-size: large;
     border-radius: 5px;
 }
 
-.login-input:focus{
+.login-input:focus {
     outline: none;
 }
-.login-button{
+
+.login-button {
     background-color: #A084CA;
     margin-top: 40px;
     position: relative;
@@ -125,19 +125,22 @@ font-size: large;
     cursor: pointer;
     color: #000000;
 }
-.login-button:hover{
+
+.login-button:hover {
     background-color: #9D65C9;
 }
-.anchor{
+
+.anchor {
     text-decoration: none;
     color: #0000008c;
     cursor: pointer;
 }
-.anchor:hover{
+
+.anchor:hover {
     color: #000000;
 }
 
-.forgot-password{
+.forgot-password {
     text-align: right;
     margin-top: 20px;
 }
@@ -145,34 +148,34 @@ font-size: large;
 
 /*Ficha da paciente*/
 
-.navbar{
+.navbar {
     padding: 5px;
     background-color: #6f4e87;
     height: 25px;
     position: fixed;
     z-index: 1000;
-    top: 0; 
-    margin-left: 0; 
+    top: 0;
+    margin-left: 0;
     margin-right: 0;
     width: 100%;
     overflow: hidden;
 }
 
-.navbar a{
+.navbar a {
     margin-left: 30px;
     font-weight: bold;
     text-decoration: none;
     color: #bface0;
 }
 
-.wholescreen{
+.wholescreen {
     display: flex;
     width: 90%;
     height: 100%;
     position: relative;
 }
 
-.side-ficha{
+.side-ficha {
     text-align: center;
     position: fixed;
     width: 200px;
@@ -183,22 +186,22 @@ font-size: large;
     z-index: 999;
 }
 
-.ficha-img{
+.ficha-img {
     margin-top: 50px;
     width: 85%;
 }
 
-.nome-paciente{
+.nome-paciente {
     color: #ffff;
     font-weight: normal;
 }
 
-.idade-gestacional{
+.idade-gestacional {
     color: #ffff;
     font-weight: normal;
 }
 
-.side-button{
+.side-button {
     color: #ffff;
     padding: 8px;
     text-align: center;
@@ -212,12 +215,12 @@ font-size: large;
     overflow: hidden;
 }
 
-.side-button:hover{
+.side-button:hover {
     background-color: #CEDEBD;
 }
 
 
-.info-ficha{
+.info-ficha {
     overflow: hidden;
     margin-left: 260px;
     position: relative;
@@ -225,7 +228,7 @@ font-size: large;
     width: 100%;
 }
 
-.section1{
+.section1 {
     overflow: hidden;
     display: flex;
     width: 100%;
@@ -241,7 +244,7 @@ font-size: large;
     width: 50%;
 }
 
-.dates-container{
+.dates-container {
     display: flex;
 }
 
@@ -261,7 +264,7 @@ font-size: large;
     margin-left: 80px;
 }
 
-.consulta-input{
+.consulta-input {
     background-color: #bface0;
     width: 100px;
     padding: 10px;
@@ -271,11 +274,11 @@ font-size: large;
     text-align: center;
 }
 
-.consulta-input:focus{
+.consulta-input:focus {
     outline: none;
 }
 
-.date-input{
+.date-input {
     background-color: #bface0;
     width: 100px;
     padding: 10px;
@@ -283,28 +286,31 @@ font-size: large;
     border-radius: 20px;
     font-family: 'Roboto', sans-serif;
 }
-.date-input:focus{
+
+.date-input:focus {
     outline: none;
 }
 
-.consulta-input::-webkit-inner-spin-button{
+.consulta-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
 }
-.consulta-input::-webkit-outter-spin-button{
+
+.consulta-input::-webkit-outter-spin-button {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
 }
 
 
-.pragnancy-risk{
+.pragnancy-risk {
     position: relative;
     margin-left: 10px;
     text-align: left;
 }
-.risk{
+
+.risk {
     width: 300px;
     border-radius: 20px;
     padding: 20px;
@@ -312,12 +318,12 @@ font-size: large;
     height: 90px;
 }
 
-.risk-title{
+.risk-title {
     margin-right: 30px;
 }
 
 
-.risk-input{
+.risk-input {
     background-color: #e6d7ff;
     width: 150px;
     padding: 10px;
@@ -327,18 +333,18 @@ font-size: large;
     margin-bottom: 20px;
 }
 
-.risk-input:focus{
+.risk-input:focus {
     outline: none;
 }
 
-.personal-info{
+.personal-info {
     margin-left: 20px;
     padding: 10px;
     height: 100px;
     text-align: left;
 }
 
-.personal-input{
+.personal-input {
     text-align: left;
     background-color: #e6d7ff;
     width: 200px;
@@ -348,12 +354,13 @@ font-size: large;
     margin-right: 10px;
     margin-bottom: 20px;
 }
-.personal-input:focus{
+
+.personal-input:focus {
     outline: none;
-    border:#6f4e87 solid 1px;
+    border: #6f4e87 solid 1px;
 }
 
-.section2{
+.section2 {
     overflow: hidden;
     background-color: #bface0;
     padding: 20px;
@@ -363,20 +370,20 @@ font-size: large;
     border-radius: 20px;
 }
 
-.container2{
+.container2 {
     background-color: #e6d7ff;
     width: 20vw;
-    margin-left: 30px ;
-    margin-right: 30px ;
+    margin-left: 30px;
+    margin-right: 30px;
     border-radius: 20px;
     height: 32vh;
 }
 
-.container2 h3{
+.container2 h3 {
     text-align: center;
 }
 
-.info-text{
+.info-text {
     margin-top: -15px;
     position: relative;
     left: 50%;
@@ -387,11 +394,13 @@ font-size: large;
     margin-bottom: 10px;
     height: 20vh;
 }
-.info-text::-webkit-scrollbar{
+
+.info-text::-webkit-scrollbar {
     width: 2px;
     background-color: none;
 }
-.section3{
+
+.section3 {
     overflow: hidden;
     margin-top: 30px;
     background-color: #bface0;
@@ -404,7 +413,7 @@ font-size: large;
     margin-bottom: 5vw;
 }
 
-.container3{
+.container3 {
     padding-top: 20px;
     position: relative;
     background-color: #e6d7ff;
@@ -416,7 +425,7 @@ font-size: large;
     margin-bottom: 20px;
 }
 
-.observacoes-text{
+.observacoes-text {
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -427,7 +436,7 @@ font-size: large;
     height: 35vh;
 }
 
-.section4{
+.section4 {
     overflow: hidden;
     margin-top: 30px;
     background-color: #bface0;
@@ -440,7 +449,7 @@ font-size: large;
     margin-bottom: 5vw;
 }
 
-.container4{
+.container4 {
     padding-top: 20px;
     position: relative;
     background-color: #e6d7ff;
@@ -452,7 +461,7 @@ font-size: large;
     margin-bottom: 20px;
 }
 
-.doctor-text{
+.doctor-text {
     position: relative;
     left: 50%;
     transform: translate(-50%);
@@ -463,11 +472,11 @@ font-size: large;
     border-radius: 10px;
 }
 
-.info-parto{
+.info-parto {
     display: flex;
 }
 
-.obs-parto{
+.obs-parto {
     border-radius: 20px;
     margin: 20px;
     background-color: #ffffff;
@@ -476,7 +485,7 @@ font-size: large;
     padding: 10px;
 }
 
-.parto-checklist{
+.parto-checklist {
     border: #0000006f solid 1px;
     border-radius: 20px;
     margin: 20px;
@@ -486,7 +495,7 @@ font-size: large;
     padding: 10px;
 }
 
-.modalAgendamento{
+.modalAgendamento {
     display: none;
     position: fixed;
     width: 100vw;
@@ -498,9 +507,9 @@ font-size: large;
     z-index: 1000000;
 }
 
-.sectionModal{
+.sectionModal {
     background-color: #ffffff;
-    height:85vh;
+    height: 85vh;
     margin-top: 10vh;
     margin-left: 15%;
     margin-right: 15%;
@@ -509,14 +518,14 @@ font-size: large;
     border-radius: 30px;
 }
 
-.sectionModal h2{
+.sectionModal h2 {
     font-family: 'Roboto';
     font-size: x-large;
     text-align: center;
     padding-right: 10vw;
 }
 
-.fechar{
+.fechar {
     margin-left: 90%;
     margin-top: 50px;
     size: 10px;
@@ -524,13 +533,13 @@ font-size: large;
     font-size: x-large;
 }
 
-.text-agendamento{
+.text-agendamento {
     font-family: 'Roboto';
     margin-top: 20px;
-   
+
 }
 
-.campo-agendamento{
+.campo-agendamento {
     margin-bottom: 40px;
     margin-top: 40px;
     width: 85%;
@@ -538,7 +547,7 @@ font-size: large;
     box-sizing: border-box;
 }
 
-.agendamento-button{
+.agendamento-button {
     background-color: #6f4e87;
     color: white;
     font-size: larger;
@@ -552,17 +561,17 @@ font-size: large;
     cursor: pointer;
 }
 
-.agendamento-button:hover{
+.agendamento-button:hover {
     background-color: #CEDEBD;
 }
 
 
-.save-container{
+.save-container {
     text-align: center;
     margin-bottom: 5vh;
 }
 
-.save-button{
+.save-button {
     color: #ffff;
     padding: 8px;
     text-align: center;
@@ -576,7 +585,7 @@ font-size: large;
     overflow: hidden;
 }
 
-.save-button:hover{
+.save-button:hover {
     background-color: #CEDEBD;
     border: solid #bface0 2px;
 }

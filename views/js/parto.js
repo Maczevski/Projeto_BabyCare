@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     carregarOpcaoSalva('mySelect1');
     carregarOpcaoSalva('mySelect2');
     carregarOpcaoSalva('mySelect3');
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     carregarOpcaoSalva('mySelect12');
 
 });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     carregarOpcaoSalva('mySelect5');
     carregarOpcaoSalva('mySelect6');
     carregarOpcaoSalva('mySelect7');
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     carregarOpcaoSalva('mySelect12');
 
 });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     carregarOpcaoSalva('mySelect9');
     carregarOpcaoSalva('mySelect10');
     carregarOpcaoSalva('mySelect11');
