@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha da Paciente</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
+
 <body class="body-ficha">
     <div class="navbar">
-            <a href="#">BABY CARE</a>
+        <a href="#">BABY CARE</a>
     </div>
-    
+
     <div class="wholescreen">
         <div class="side-ficha">
             <img src="img/profile.png" alt="profile-img" class="ficha-img"><br>
@@ -29,18 +33,18 @@
                 Agendamento</button>
 
             <a href="menu.html"><button class="side-button">
-                <i class="fa-solid fa-house-medical"></i>
-                Voltar ao menu
-            </button></a>
+                    <i class="fa-solid fa-house-medical"></i>
+                    Voltar ao menu
+                </button></a>
         </div>
         <div class="info-ficha">
             <div class="section1">
                 <div class="pragnancy-dates">
                     <div class="dates-container">
                         <div class="DUM">
-                        <label for="DUM-date">DUM</label>
-                        <input type="date" class="date-input" id="DUM-date" value="2023-06-12">
-                    </div>
+                            <label for="DUM-date">DUM</label>
+                            <input type="date" class="date-input" id="DUM-date" value="2023-06-12">
+                        </div>
                         <div class="DPP">
                             <label for="DPP-date">DPP</label>
                             <input type="date" class="date-input" id="DPP-date" value="2024-03-20"><br>
@@ -56,7 +60,7 @@
                     <div class="risk">
                         <label for="risco" class="risk-title">Risco:</label>
                         <select id="risco" name="cor" class="risk-input">
-                            <option hidden >Selecione</option>
+                            <option hidden>Selecione</option>
                             <option value="#15EA1D" data-bgcolor="#15EA1D">Habitual</option>
                             <option value="#FFE500" data-bgcolor="#FFE500">Intermediário</option>
                             <option value="#FC0000" data-bgcolor="#FC0000">Alto</option>
@@ -92,7 +96,7 @@ Agendada
                 <div class="container2">
                     <h3>Exames</h3>
                     <textarea class="info-text"></textarea>
-                    
+
                 </div>
                 <div class="container2">
                     <h3>Informações </h3>
@@ -106,7 +110,7 @@ Agendada
                     <textarea class="observacoes-text"></textarea>
 
                 </div>
-                
+
             </div>
             <div class="section4">
                 <h3>Informações do parto</h3>
@@ -115,7 +119,7 @@ Agendada
 
                     <div class="info-parto">
                         <textarea class="obs-parto">Observações</textarea>
-                        
+
                         <div class="parto-checklist">
                             <label>List</label>
                             <input class="" type="checkbox">
@@ -127,25 +131,25 @@ Agendada
                 <button class="save-button">
                     Salvar
                 </button>
-            </div>            
+            </div>
         </div>
     </div>
-    
+
     <div class="modalAgendamento" id="janelaAgendamento">
         <div class="sectionModal">
             <span class="fechar" onclick="fechar_modal()">&times;</span>
             <h2>Agendar Consulta</h2>
             <form id="appointment-form">
-                <label  class="text-agendamento" for="appointment-type">Tipo de Consulta:</label><br>
+                <label class="text-agendamento" for="appointment-type">Tipo de Consulta:</label><br>
                 <select class="campo-agendamento" id="appointment-type" required>
                     <option value="trimestral">Trimestral</option>
                     <option value="dentista">Dentista</option>
                     <option value="outros">Outros</option>
                 </select><br><br>
-    
-                <label  class="text-agendamento" for="appointment-date">Data do Agendamento:</label><br>
+
+                <label class="text-agendamento" for="appointment-date">Data do Agendamento:</label><br>
                 <input class="campo-agendamento" type="date" id="appointment-date" required><br><br>
-    
+
                 <button class="agendamento-button" type="submit" onclick=" return agendar_consulta()">Agendar</button>
             </form>
         </div>
@@ -163,17 +167,17 @@ Agendada
 
         var abrirModal = document.getElementById('abrirAgendamentos');
         var modalAgendamento = document.getElementById('janelaAgendamento');
-        function abrir_modal(){
+        function abrir_modal() {
             modalAgendamento.style.display = 'block';
         }
-        function fechar_modal(){
+        function fechar_modal() {
             modalAgendamento.style.display = 'none';
         }
         function agendar_consulta() {
             var dataInput = document.getElementById('appointment-date').value;
             var data_agendamento = new Date(dataInput);
             var data_atual = new Date();
-            
+
             if (isNaN(data_agendamento.getTime()) || data_agendamento <= data_atual) {
                 alert('Data inválida. Por favor, insira uma data válida.');
                 return false;
@@ -182,10 +186,9 @@ Agendada
                 fechar_modal();
                 return true;
             }
-}
+        }
     </script>
-    
+
 </body>
+
 </html>
-
-

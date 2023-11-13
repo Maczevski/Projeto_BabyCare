@@ -1,166 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cadastro de Paciente</title>
-        <!-- Bootstrap CSS  -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css\cadastroP.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <style>
-        </style>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Paciente</title>
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css\cadastroP.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+  </style>
+</head>
+
 <body>
 
-<!--Barra lateral-->
+  <!--Barra lateral-->
   <div class="menu">
     <div class="logo">
-        <img src="img/profile.png" alt="">
+      <img src="img/profile.png" alt="">
     </div>
-<div class="input-box">
-  <input id="fotoPerfil" type="file" name="foto_perfil" accept="image/*">
-  <label for="Escolherft">Escolher imagen</label>
-</div>
+    <div class="input-box">
+      <input id="fotoPerfil" type="file" name="foto_perfil" accept="image/*">
+      <label for="Escolherft">Escolher imagen</label>
+    </div>
     <ul class="menu-list">
-        <!--<li><a href="#">voltar</a></li>-->
+      <!--<li><a href="#">voltar</a></li>-->
       <a href="menu.html"> <button id="btnVoltar">
-        <i class="fa-solid fa-house-medical"></i>
-        Voltar</button></a>
+          <i class="fa-solid fa-house-medical"></i>
+          Voltar</button></a>
     </ul>
-</div>
+  </div>
 
-<div class="content">
+  <div class="content">
     <div class="container">
-        <h2 class="my-5">Cadastro de Paciente</h2>
+      <h2 class="my-5">Cadastro de Paciente</h2>
       <form>
-          <!--01-->
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Ex: Regina" required>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="sobrenome" class="form-label">Sobrenome</label>
-                    <input type="text" class="form-control" id="sobrenome" placeholder="Ex: Pereira Da Silva" required>
-                  </div>
-                  <!--02-->
-                  <div class="col-md-6">
-                    <label for="sobrenome" class="form-label">CPF</label>
-                    <input type="number" class="form-control" id="cpf" placeholder="Ex: 0000.0000.000-00" required>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="sobrenome" class="form-label">telefone</label>
-                    <input type="number" class="form-control" id="telefone" placeholder="(00)00000-0000" required>
-                  </div>
-            </div>
-
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="dum">Endereço</label>
-                <input id="dum" type="text number" class="form-control" name="dum" placeholder="Bairro, rua e numero numero da casa" required>
-              </div>
-              <div class="col-md-6">
-                Micro áreas
-                <section>
-                    <select>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="15">15</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="31">31</option>
-                        <option value="44">44</option>
-                        <option value="46">46</option>
-                    </select>
-                </section>
-            </div>
-            
-            </div>
-          <!--03-->
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label for="dum">DUM</label>
-                    <input id="dum" type="date" class="form-control" name="dum" placeholder="" required>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="Dpp">DPP</label>
-                    <input id="dpp" type="date" class="form-control" name="Dpp" placeholder="" required>
-                  </div>
-                </div>
-            <!--04-->
-            <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="peso">Peso</label>
-                  <input id="peso" type="number" class="form-control" name="peso" placeholder="ex:68.500" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="Altura">Altura</label>
-                  <input id="Altura" type="number" class="form-control" name="Altura" placeholder="ex:1.67" required>
-                </div>
-              </div>
-              <!--05-->
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="Obsevações">Obsevações</label>
-                  <input id="Obsevações" type="text" class="form-control input-grande"  name="Obsevações" placeholder="" required>
-                </div>
-              </div>
-    
-          <div>
-              <form>
-                <!-- Div de Botões -->
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                      <button class="btn btn-primary-cancelar" type="submit">Descartar</button>
-                  </div>
-                <div class="col-md-6 text-end">
-                    <button class="btn btn-primary-salvar" type="submit">Salvar</button>
-                </div>
-                </div>
-                </form>
-            </div>
+        <!--01-->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Ex: Regina" required>
+          </div>
+          <div class="col-md-6">
+            <label for="sobrenome" class="form-label">Sobrenome</label>
+            <input type="text" class="form-control" id="sobrenome" placeholder="Ex: Pereira Da Silva" required>
+          </div>
+          <!--02-->
+          <div class="col-md-6">
+            <label for="sobrenome" class="form-label">CPF</label>
+            <input type="number" class="form-control" id="cpf" placeholder="Ex: 0000.0000.000-00" required>
+          </div>
+          <div class="col-md-6">
+            <label for="sobrenome" class="form-label">telefone</label>
+            <input type="number" class="form-control" id="telefone" placeholder="(00)00000-0000" required>
+          </div>
         </div>
-      </div>
-      </form>
-            
-    
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
-      <script src="js/scripts.js"></script>
-      <script>
-          // Função para exibir o aviso
-          function exibirAviso() {
-              alert("Paciente cadastrada com sucesso!");
-          }
-      
-          // Captura o formulário
-          var formulario = document.querySelector('form');
-      
-          // Adiciona um evento de "submit" ao formulário
-          formulario.addEventListener('submit', function (e) {
-              e.preventDefault(); // Impede o envio padrão do formulário
-              exibirAviso(); // Chama a função de exibir aviso
-          });
-      </script>
-      
-    
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="dum">Endereço</label>
+            <input id="dum" type="text number" class="form-control" name="dum"
+              placeholder="Bairro, rua e numero numero da casa" required>
+          </div>
+          <div class="col-md-6">
+            Micro áreas
+            <section>
+              <select>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="15">15</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="31">31</option>
+                <option value="44">44</option>
+                <option value="46">46</option>
+              </select>
+            </section>
+          </div>
+
+        </div>
+        <!--03-->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="dum">DUM</label>
+            <input id="dum" type="date" class="form-control" name="dum" placeholder="" required>
+          </div>
+          <div class="col-md-6">
+            <label for="Dpp">DPP</label>
+            <input id="dpp" type="date" class="form-control" name="Dpp" placeholder="" required>
+          </div>
+        </div>
+        <!--04-->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="peso">Peso</label>
+            <input id="peso" type="number" class="form-control" name="peso" placeholder="ex:68.500" required>
+          </div>
+          <div class="col-md-6">
+            <label for="Altura">Altura</label>
+            <input id="Altura" type="number" class="form-control" name="Altura" placeholder="ex:1.67" required>
+          </div>
+        </div>
+        <!--05-->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="Obsevações">Obsevações</label>
+            <input id="Obsevações" type="text" class="form-control input-grande" name="Obsevações" placeholder=""
+              required>
+          </div>
+        </div>
+
+        <div>
+          <form>
+            <!-- Div de Botões -->
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <button class="btn btn-primary-cancelar" type="submit">Descartar</button>
+              </div>
+              <div class="col-md-6 text-end">
+                <button class="btn btn-primary-salvar" type="submit">Salvar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+  </form>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    // Função para exibir o aviso
+    function exibirAviso() {
+      alert("Paciente cadastrada com sucesso!");
+    }
+
+    // Captura o formulário
+    var formulario = document.querySelector('form');
+
+    // Adiciona um evento de "submit" ao formulário
+    formulario.addEventListener('submit', function (e) {
+      e.preventDefault(); // Impede o envio padrão do formulário
+      exibirAviso(); // Chama a função de exibir aviso
+    });
+  </script>
+
+
 </body>
+
 </html>
