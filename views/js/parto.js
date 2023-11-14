@@ -70,3 +70,6 @@ riskSelects.forEach(function (selectElement) {
         salvarOpcao(selectElement);
     });
 });
+
+
+//salvar tipo de parto
